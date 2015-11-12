@@ -1,0 +1,44 @@
+PID	EngineTypes	Authentication	Name_Short	Name_Full	Length	Type	DataType_Raw	Formula	Formula_Bytes	Units	Enumerations	Description
+0x0005	[D][P]		Coolant Temp	Coolant Temperature	1	float	uint8	x-40	A-40	°C		
+0x0023			Fuel Rail Pressure	Fuel Rail Pressure (diesel, or gasoline direct inject)	2	float	uint16	x*10	((A*256)+B)*10	kPa		
+0x003C			EGT Catalyst Inlet	Exhaust Gas Temperature (EGT) at Catalyst Inlet	2	float	uint16	x/10-40	((A*256)+B)/10-40	°C		
+0x003E			EGT DPF Inlet	Exhaust Gas Temperature (EGT) at DPF Inlet	2	float	uint16	x/10-40	((A*256)+B)/10-40	°C		
+0x102A	[D]	[A]	Injector Code Cyl #1	Injector Code Cylinder #1	15	raw						
+0x102B	[D]	[A]	Injector Code Cyl #2	Injector Code Cylinder #2	15	raw						
+0x102C	[D]	[A]	Injector Code Cyl #3	Injector Code Cylinder #3	15	raw						
+0x102D	[D]	[A]	Injector Code Cyl #4	Injector Code Cylinder #4	15	raw						
+0x10AC	[D][P]		Primary Boost Control	Primary Boost Control	1	float	uint8	x*100/255	A*100/255	%		wastegate or VGT
+0x10B4	[P]		Intake VVT Advance Angle R	Intake VVT Advance Angle Right	1	float	uint8	x-50	A-50	deg		
+0x10B5	[P]		Intake VVT Advance Angle L	Intake VVT Advance Angle Left	1	float	uint8	x-50	A-50	deg		
+0x1116	[D]		Final Injection Amount	Final Injection Amount	2	float	uint16	x/256	A+B/256	mm³/st		
+0x111B	[D]		EGR Target Valve Opening Angle	Exhaust Gas Recirculation (EGR) Target Valve Opening Angle	1	float	uint8	x-50	A-50	deg		
+0x111C	[D]		EGR Valve Opening Angle	Exhaust Gas Recirculation (EGR) Valve Opening Angle	1	float	uint8	x-50	A-50	deg		
+0x111F	[D]		Inlet Air Temp	Inlet Air Temperature (after air filter)	1	float	uint8	x-40	A-40	°C		
+0x1121	[D][P]		Target Engine Speed	Target Engine Speed	2	float	uint16	x/4	((A*256)+B)/4	rpm		
+0x112A	[D]		Mileage after Injector Learning	Mileage after Injector Learning	2	float	uint16	x*5	((A*256)+B)*5	km		
+0x112B	[D]		Mileage after Injector Replacement	Mileage after Injector Replacement	2	float	uint16	x*5	((A*256)+B)*5	km		
+0x112C	[D]		Interior Heater	Interior Heater	1	int	uint8	x	A	steps		
+0x112D	[D]		Quantity Correction Cyl #1	Quantity Correction Cylinder #1	1	float	uint8	(x-100)/100	(A-100)/100	ms		
+0x112E	[D]		Quantity Correction Cyl #2	Quantity Correction Cylinder #2	1	float	uint8	(x-100)/100	(A-100)/100	ms		
+0x112F	[D]		Quantity Correction Cyl #3	Quantity Correction Cylinder #3	1	float	uint8	(x-100)/100	(A-100)/100	ms		
+0x1130	[D]		Quantity Correction Cyl #4	Quantity Correction Cylinder #4	1	float	uint8	(x-100)/100	(A-100)/100	ms		
+0x1135	[D][P]		Battery Current	Battery Current	1	float	uint8	x-128	A-128	A		
+0x1136	[D][P]		Battery Temperature	Battery Temperature	1	float	uint8	x-40	A-40	°C		
+0x1149	[D]		Cumulative Ash Ratio	Cumulative Ash Ratio	1	float	uint8	x	A	%		
+0x114A	[D]		DPF Pressure Diff	Pressure Difference between DPF Inlet and Outlet	1	float	uint8	x	A	kPa		
+0x114B	[D]		Estimated Catalyst Temp	Estimated Catalyst Temperature	1	float	uint8	x*5-40	A*5-40	°C		
+0x114C	[D]		Estimated DPF Temp	Estimated DPF Temperature	1	float	uint8	x*5-40	A*5-40	°C		
+0x114D	[D]		Soot Accumulation Ratio	Soot Accumulation Ratio	1	float	uint8	x	A	%		
+0x114E	[D]		Oil Dilution Ratio	Oil Dilution Ratio	1	float	uint8	x	A	%		
+0x1155	[D]		Estimated Distance to Oil Change	Estimated Distance to Oil Change	1	float	uint8	x*100	A*100	km		
+0x1156	[D]		Running Distance since last DPF Regeneration	Running Distance since last DPF Regeneration	2	float	uint16	x	A*256+B	km		
+0x1157	[D]		DPF Regeneration Count	DPF Regeneration Count	2	float	uint16	x	A*256+B	Times		
+0x1189	[D]	[A]	Oil Dilution Amount	Oil Dilution Amount	1	float	uint8	x/200	A/200	kg		
+0x124C	[D][P]		Oil Level SW	Oil Level Switch	1	enum	uint8				0x00=LOW; 0xFF=HIGH (normal)	
+0x124F	[D]		Glow SW	Glow Relay Switch	1	enum	uint8				0x00=OFF; 0xFF=ON	
+0x1254	[D]		Injector Learning SW	Injector Learning	1	enum	uint8				0x00=OFF; 0xFF=ON	
+0x125B	[D]		DPF Active Regeneration SW	DPF Active Regeneration Switch	1	enum	uint8				0x00=OFF; 0xFF=ON	
+0xF100			SSMID	SSMID	3	raw						
+0xF182			ROMID	ROMID	5	raw						
+0xF190			VIN	Vehicle Identification Number (VIN)	17	ascii						
+0xF197			System String	System String	32	ascii						
