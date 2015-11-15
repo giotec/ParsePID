@@ -11,8 +11,9 @@
 1.	License
 2.	Purpose
 3.	Requirements
-4.	Data Files
-5.	Demo Output
+4.	Build
+5.	Data Files
+6.	Demo Output
 
 ---
 
@@ -38,7 +39,7 @@ You can also get license text in different formats and further details there.
 
 ## 3) Requirements
 
-Just this: .NET 4 or later, or any compatible runtime.
+*	**.NET 4** or later, or any compatible runtime.
 
 Compiled executable should be platform-independent.
 
@@ -54,35 +55,104 @@ Links:
 
 ---
 
-## 4) Data Files
+## 4) Build
+
+Either use an IDE (Integrated Development Environment) like *MonoDevelop* or *Visual Studio*, or just type in commands.
+
+### 4.1) Manually
+
+#### 4.1.1) Mono (Linux)
+
+Mono provides `xbuild` command line tool.
+Besides main runtime package (often named `mono`, `mono-runtime` or `mono-core`), on some Linux distributions required additional packages might be called *mono-devel* ([Ubuntu](http://packages.ubuntu.com/search?keywords=mono-devel), [Debian](https://packages.debian.org/search?keywords=mono-devel&searchon=names)) or *mono-dev*.
+
+`xbuild /property:Configuration=Release ParsePID.sln`
+
+or
+
+`xbuild /property:Configuration=Debug ParsePID.sln`
+
+or just `xbuild` (defaults to debug build, picks solution/project file in current directory)
+
+run:
+
+`bin/Release/ParsePID.exe`
+
+or, respectively:
+
+`bin/Debug/ParsePID.exe`
+
+#### 4.1.2) Windows
+
+Like on Linux, just replace `xbuild` with `msbuild`.
+You might need to find and specify exact path of `msbuild.exe`, exact location depends on Windows and .NET version.
+
+If not in path, consider adding tools directory to environment variable `%PATH%`, either temporarily (see below) or in Windows system settings.
+
+Windows 8.1 x64 and Windows 10 tested example:
+	
+Open *Command Prompt* window and type:
+
+	SET PATH=%PATH%;C:\Windows\Microsoft.NET\Framework\v4.0.30319\
+	
+	msbuild
+
+run:
+
+`bin/Debug/ParsePID.exe`
+
+### 4.2) Integrated Development Environment (IDE)
+
+*	*MonoDevelop* (Linux) / *Xamarin Studio* (Windows)
+<http://monodevelop.com/>
+
+	Multi-platform, tested on Linux and Windows.
+	
+	It is **open source**, written in C#, uses *Mono*'s `xbuild` for compilation.
+	
+	So far, ParsePID has been written using *MonoDevelop* on Linux exclusively.
+
+*	*Visual Studio*
+	<http://www.visualstudio.com/>
+
+	Obviously Windows-only, uses `msbuild` under the hood.
+	
+	Free *Community* edition is more than capable, older *Express* versions should also work.
+
+*	Others: not tested yet
+
+---
+
+## 5) Data Files
 
 See `data` subfolder for (demo) data files. No guarantees for correctness as usual.
 The program uses pre-compiled paths if arguments are missing.
 
-### 4.1) Parameter Definitions
+### 5.1) Parameter Definitions
 
 *	`Subaru_mode22_def.csv`
 
 	Subaru Diesel Crew, <https://subdiesel.wordpress.com/generic/protocols/extended-obd-ii/>
 
-### 4.2) Response Data
+### 5.2) Response Data
 
 *	`2011 Impreza Diesel Responses.txt`
 
 	2011 Impreza Turbo Diesel 2.0 6MT, Euro 5, CID `JZ4A110B`
 
-	Subaru Diesel Crew
-*	`2014 Forester 2.5 XT DIT Responses.txt`
+	courtesy of Subaru Diesel Crew
+*	`2014 Forester FB25 non-Turbo Responses.txt`
 
 	engine FB25, CVT, non-turbo, CID `EA1M220F`
 
-	contribution by "Alexander"
+	contribution by Alexander
 
 ---
 
-## 5) Demo Output
+## 6) Demo Output
 
-### 5.1) Using "2011 Impreza Diesel Responses.txt"
+### 6.1) Using "2011 Impreza Diesel Responses.txt"
+
 	ParsePID: Parse Subaru OBD-II mode 22 definitions and support responses.
 	Usage:
 	ParsePID.exe <ResponseFile> <DefinitionsFile>
@@ -90,7 +160,7 @@ The program uses pre-compiled paths if arguments are missing.
 	or for using predefined file paths: ParsePID.exe
 
 	Parsing parameter definitions from file "data/Subaru_mode22_def.csv"
-	Parsed 43 parameters.
+	Parsed 52 parameters.
 
 	Parsing support responses from file "data/2011 Impreza Diesel Responses.txt"
 	[SupportResponse: PID=0x0000 | SupportValue=0x183B8013]
@@ -173,8 +243,8 @@ The program uses pre-compiled paths if arguments are missing.
 	PID 0x10A6 : N/A
 	PID 0x10A7 : N/A
 	PID 0x10AC : Primary Boost Control [%]
-	PID 0x10B2 : N/A
-	PID 0x10E3 : N/A
+	PID 0x10B2 : Alternator Duty [%]
+	PID 0x10E3 : Memorised Cruise Speed [km/h]
 	PID 0x1115 : N/A
 	PID 0x1116 : Final Injection Amount [mm³/st]
 	PID 0x1117 : N/A
@@ -282,15 +352,15 @@ The program uses pre-compiled paths if arguments are missing.
 	PID 0x11DD : N/A
 	PID 0x11F3 : N/A
 	PID 0x11F4 : N/A
-	PID 0x122F : N/A
-	PID 0x1230 : N/A
-	PID 0x1231 : N/A
-	PID 0x1232 : N/A
-	PID 0x1233 : N/A
-	PID 0x1234 : N/A
+	PID 0x122F : Clutch Switch []
+	PID 0x1230 : Stop Light Switch []
+	PID 0x1231 : Cruise Control Set/Coast Switch []
+	PID 0x1232 : Cruise Control Resume/Accelerate Switch []
+	PID 0x1233 : Brake Switch []
+	PID 0x1234 : Cruise Control Main Toggle Switch []
 	PID 0x1244 : N/A
 	PID 0x1245 : N/A
-	PID 0x124A : N/A
+	PID 0x124A : Cruise Control Cancel Switch []
 	PID 0x124D : N/A
 	PID 0x124E : N/A
 	PID 0x124F : Glow Relay Switch []
@@ -307,9 +377,10 @@ The program uses pre-compiled paths if arguments are missing.
 	PID 0x125E : N/A
 	PID 0x125F : N/A
 	PID 0x1262 : N/A
-	Supported PIDs total: 183 | known: 36 | unknown: 147
+	Supported PIDs total: 183 | known: 45 | unknown: 138
 
-### 5.2) Using "2014 Forester 2.5 XT DIT Responses.txt"
+### 6.2) Using "2014 Forester FB25 non-Turbo Responses.txt"
+
 	ParsePID: Parse Subaru OBD-II mode 22 definitions and support responses.
 	Usage:
 	ParsePID.exe <ResponseFile> <DefinitionsFile>
@@ -317,9 +388,9 @@ The program uses pre-compiled paths if arguments are missing.
 	or for using predefined file paths: ParsePID.exe
 
 	Parsing parameter definitions from file "data/Subaru_mode22_def.csv"
-	Parsed 43 parameters.
+	Parsed 52 parameters.
 
-	Parsing support responses from file "data/2014 Forester 2.5 XT DIT Responses.txt"
+	Parsing support responses from file "data/2014 Forester FB25 non-Turbo Responses.txt"
 	[SupportResponse: PID=0x1000 | SupportValue=0xFFC0000D]
 	[SupportResponse: PID=0x1020 | SupportValue=0x50000019]
 	[SupportResponse: PID=0x1040 | SupportValue=0x00000001]
@@ -371,7 +442,7 @@ The program uses pre-compiled paths if arguments are missing.
 	PID 0x10A6 : N/A
 	PID 0x10AE : N/A
 	PID 0x10B1 : N/A
-	PID 0x10B2 : N/A
+	PID 0x10B2 : Alternator Duty [%]
 	PID 0x10B4 : Intake VVT Advance Angle Right [deg]
 	PID 0x10B5 : Intake VVT Advance Angle Left [deg]
 	PID 0x10B6 : N/A
@@ -384,7 +455,7 @@ The program uses pre-compiled paths if arguments are missing.
 	PID 0x10C1 : N/A
 	PID 0x10DE : N/A
 	PID 0x10DF : N/A
-	PID 0x10E3 : N/A
+	PID 0x10E3 : Memorised Cruise Speed [km/h]
 	PID 0x10E5 : N/A
 	PID 0x10E7 : N/A
 	PID 0x110B : N/A
@@ -429,13 +500,13 @@ The program uses pre-compiled paths if arguments are missing.
 	PID 0x11F4 : N/A
 	PID 0x11F5 : N/A
 	PID 0x122E : N/A
-	PID 0x122F : N/A
-	PID 0x1230 : N/A
-	PID 0x1231 : N/A
-	PID 0x1232 : N/A
-	PID 0x1233 : N/A
-	PID 0x1234 : N/A
-	PID 0x124A : N/A
+	PID 0x122F : Clutch Switch []
+	PID 0x1230 : Stop Light Switch []
+	PID 0x1231 : Cruise Control Set/Coast Switch []
+	PID 0x1232 : Cruise Control Resume/Accelerate Switch []
+	PID 0x1233 : Brake Switch []
+	PID 0x1234 : Cruise Control Main Toggle Switch []
+	PID 0x124A : Cruise Control Cancel Switch []
 	PID 0x124C : Oil Level Switch []
 	PID 0x1265 : N/A
 	PID 0x1266 : N/A
@@ -452,6 +523,6 @@ The program uses pre-compiled paths if arguments are missing.
 	PID 0x127F : N/A
 	PID 0x12A1 : N/A
 	PID 0x12A2 : N/A
-	Supported PIDs total: 107 | known: 6 | unknown: 101
+	Supported PIDs total: 107 | known: 15 | unknown: 92
 
 ---

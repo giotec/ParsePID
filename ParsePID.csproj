@@ -40,16 +40,18 @@
     <Folder Include="data\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="data\Subaru_mode22_def.csv">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="data\2011 Impreza Diesel Responses.txt">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
     <None Include="COPYING.txt" />
     <None Include="README.md" />
-    <None Include="data\2014 Forester 2.5 XT DIT Responses.txt">
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="data\Subaru_mode22_def.csv">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
+    </Content>
+    <Content Include="data\2011 Impreza Diesel Responses.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data\2014 Forester FB25 non-Turbo Responses.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 </Project>

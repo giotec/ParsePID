@@ -1,5 +1,5 @@
-# 2014 Forester 2.5 XT DIT, engine FB25, CVT, non-turbo, CID EA1M220F
-# contribution by "Alexander"
+# 2014 Forester FB25 non-Turbo, CVT, CID EA1M220F
+# contribution by Alexander
 
 62  10 00  FF C0 00 0D
 62  10 20  50 00 00 19
