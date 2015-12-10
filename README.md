@@ -160,7 +160,7 @@ The program uses pre-compiled paths if arguments are missing.
 	or for using predefined file paths: ParsePID.exe
 
 	Parsing parameter definitions from file "data/Subaru_mode22_def.csv"
-	Parsed 52 parameters.
+	Parsed 58 parameters.
 
 	Parsing support responses from file "data/2011 Impreza Diesel Responses.txt"
 	[SupportResponse: PID=0x0000 | SupportValue=0x183B8013]
@@ -282,12 +282,12 @@ The program uses pre-compiled paths if arguments are missing.
 	PID 0x1155 : Estimated Distance to Oil Change [km]
 	PID 0x1156 : Running Distance since last DPF Regeneration [km]
 	PID 0x1157 : DPF Regeneration Count [Times]
-	PID 0x1158 : N/A
-	PID 0x1159 : N/A
-	PID 0x115A : N/A
-	PID 0x115B : N/A
-	PID 0x1161 : N/A
-	PID 0x1162 : N/A
+	PID 0x1158 : Micro-Quantity-Injection Final Learning Values Cylinder #1 [ms]
+	PID 0x1159 : Micro-Quantity-Injection Final Learning Values Cylinder #2 [ms]
+	PID 0x115A : Micro-Quantity-Injection Final Learning Values Cylinder #3 [ms]
+	PID 0x115B : Micro-Quantity-Injection Final Learning Values Cylinder #4 [ms]
+	PID 0x1161 : Individual Pump Difference Learning Value [mA]
+	PID 0x1162 : Final Main Injection Period [ms]
 	PID 0x1163 : N/A
 	PID 0x1164 : N/A
 	PID 0x1165 : N/A
@@ -377,7 +377,7 @@ The program uses pre-compiled paths if arguments are missing.
 	PID 0x125E : N/A
 	PID 0x125F : N/A
 	PID 0x1262 : N/A
-	Supported PIDs total: 183 | known: 45 | unknown: 138
+	Supported PIDs total: 183 | known: 51 | unknown: 132
 
 ### 6.2) Using "2014 Forester FB25 non-Turbo Responses.txt"
 
@@ -388,7 +388,7 @@ The program uses pre-compiled paths if arguments are missing.
 	or for using predefined file paths: ParsePID.exe
 
 	Parsing parameter definitions from file "data/Subaru_mode22_def.csv"
-	Parsed 52 parameters.
+	Parsed 58 parameters.
 
 	Parsing support responses from file "data/2014 Forester FB25 non-Turbo Responses.txt"
 	[SupportResponse: PID=0x1000 | SupportValue=0xFFC0000D]
@@ -524,5 +524,6 @@ The program uses pre-compiled paths if arguments are missing.
 	PID 0x12A1 : N/A
 	PID 0x12A2 : N/A
 	Supported PIDs total: 107 | known: 15 | unknown: 92
+
 
 ---

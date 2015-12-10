@@ -35,6 +35,12 @@ PID	EngineTypes	Authentication	Name_Short	Name_Full	Length	Type	DataType_Raw	For
 0x1155	[D]		Estimated Distance to Oil Change	Estimated Distance to Oil Change	1	float	uint8	x*100	A*100	km			
 0x1156	[D]		Running Distance since last DPF Regeneration	Running Distance since last DPF Regeneration	2	float	uint16	x	A*256+B	km			
 0x1157	[D]		DPF Regeneration Count	DPF Regeneration Count	2	float	uint16	x	A*256+B	Times			
+0x1158	[D]		Micro-Q Learning Values Cyl #1	Micro-Quantity-Injection Final Learning Values Cylinder #1	5	float	uint8[]	(x[i]-128)/200		ms		byte[0..4] = Pressure Level 1..5	0x00023D …
+0x1159	[D]		Micro-Q Learning Values Cyl #2	Micro-Quantity-Injection Final Learning Values Cylinder #2	5	float	uint8[]	(x[i]-128)/200		ms		byte[0..4] = Pressure Level 1..5	
+0x115A	[D]		Micro-Q Learning Values Cyl #3	Micro-Quantity-Injection Final Learning Values Cylinder #3	5	float	uint8[]	(x[i]-128)/200		ms		byte[0..4] = Pressure Level 1..5	
+0x115B	[D]		Micro-Q Learning Values Cyl #4	Micro-Quantity-Injection Final Learning Values Cylinder #4	5	float	uint8[]	(x[i]-128)/200		ms		byte[0..4] = Pressure Level 1..5	
+0x1161	[D]		SCV Learning Value	Individual Pump Difference Learning Value	2	float	uint16	x-1000	((A*256)+B)-1000	mA		Suction Control Valve	0x000238
+0x1162	[D]		Final Main Injection Period	Final Main Injection Period	2	float	uint16	x/1000	((A*256)+B)/1000	ms			0x000257
 0x1189	[D]	[A]	Oil Dilution Amount	Oil Dilution Amount	1	float	uint8	x/200	A/200	kg			
 0x122F	[D][P]		Clutch SW	Clutch Switch	1	enum	uint8				0x00=OFF; 0xFF=ON		0x000121 bit 7
 0x1230	[D][P]		Stop Light SW	Stop Light Switch	1	enum	uint8				0x00=OFF; 0xFF=ON		0x000121 bit 6
