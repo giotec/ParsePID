@@ -2,28 +2,30 @@
 
 *	Author: subdiesel, Subaru Diesel Crew <http://subdiesel.wordpress.com/>
 
-*	Project homepage on *GitHub*: <http://github.com/SubaruDieselCrew/ParsePID/>
+*	Project homepage and source code: <http://github.com/SubaruDieselCrew/ParsePID/>
 
-# Quick Facts
+
 
 ## CONTENTS
 
-1.	License
-2.	Purpose
-3.	Requirements
-4.	Build
-5.	Data Files
-6.	Demo Output
+1.	[Purpose](#purpose)
+2.	[License](#license)
+3.	[Requirements](#requirements)
+4.	[Build](#build)
+5.	[Data Files](#data_files)
+6.	[Demo Output](#demo_output)
 
 ---
 
-## 1) Purpose
+## <a name="purpose"></a> 1) Purpose
 
 *ParsePID* is a console application to analyse **Extended/Enhanced OBD-II mode 22 capabilities**, specifically for **Subaru diesel and petrol** control units supporting this protocol.
 
+Protocol details: [Subaru Diesel Crew: Extended OBD-II](https://subdiesel.wordpress.com/generic/protocols/extended-obd-ii/)
+
 ---
 
-## 2) License
+## <a name="license"></a> 2) License
 
 GPLv3. See text file [COPYING.txt](COPYING.txt) for license text.
 
@@ -37,7 +39,7 @@ You can also get license text in different formats and further details there.
 
 ---
 
-## 3) Requirements
+## <a name="requirements"></a> 3) Requirements
 
 *	**.NET 4** or later, or any compatible runtime.
 
@@ -55,7 +57,7 @@ Links:
 
 ---
 
-## 4) Build
+## <a name="build"></a> 4) Build
 
 Either use an IDE (Integrated Development Environment) like *MonoDevelop* or *Visual Studio*, or just type in commands.
 
@@ -123,7 +125,7 @@ run:
 
 ---
 
-## 5) Data Files
+## <a name="data_files"></a> 5) Data Files
 
 See `data` subfolder for (demo) data files. No guarantees for correctness as usual.
 The program uses pre-compiled paths if arguments are missing.
@@ -149,7 +151,7 @@ The program uses pre-compiled paths if arguments are missing.
 
 ---
 
-## 6) Demo Output
+## <a name="demo_output"></a> 6) Demo Output
 
 ### 6.1) Using "2011 Impreza Diesel Responses.txt"
 
