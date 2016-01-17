@@ -7,6 +7,12 @@ PID	EngineTypes	Authentication	Name_Short	Name_Full	Length	Type	DataType_Raw	For
 0x102B	[D]	[A]	Injector Code Cyl #2	Injector Code Cylinder #2	15	raw							
 0x102C	[D]	[A]	Injector Code Cyl #3	Injector Code Cylinder #3	15	raw							
 0x102D	[D]	[A]	Injector Code Cyl #4	Injector Code Cylinder #4	15	raw							
+0x10A1	[D][P]		MAF Voltage	Mass Airflow Sensor Voltage	1	float	uint8	x/50	A/50	V			0x00001D
+0x10A3	[P]		Fuel Injector #1	Fuel Injector #1 Pulse Width	1	float	uint8	x*0.256	A*0.256	ms		includes injector latency	0x000020
+0x10A4	[P]		Fuel Injector #2	Fuel Injector #2 Pulse Width	1	float	uint8	x*0.256	A*0.256	ms		includes injector latency	0x000021
+0x10A5	[P]		Learned Ignition Timing	Learned Ignition Timing	1	float	uint8	(x-128)/2	(A-128)/2	deg		Advance or retard amount when knocking has occurred.	0x000028
+0x10A6	[D][P]		Accelerator	Accelerator Pedal Angle	1	float	uint8	x*100/255	A*100/255	%			0x000029
+0x10A7	[D]		Fuel Temperature	Fuel Temperature	1	float	uint8	x-40	A-40	°C			0x00002A
 0x10AC	[D][P]		Primary Boost Control	Primary Boost Control	1	float	uint8	x*100/255	A*100/255	%		wastegate or VGT	
 0x10B2	[D][P]		Alternator Duty	Alternator Duty	1	int	uint8	x	A	%			0x00003A
 0x10B4	[P]		Intake VVT Advance Angle R	Intake VVT Advance Angle Right	1	float	uint8	x-50	A-50	deg			
@@ -26,6 +32,7 @@ PID	EngineTypes	Authentication	Name_Short	Name_Full	Length	Type	DataType_Raw	For
 0x1130	[D]		Quantity Correction Cyl #4	Quantity Correction Cylinder #4	1	float	uint8	(x-100)/100	(A-100)/100	ms			
 0x1135	[D][P]		Battery Current	Battery Current	1	float	uint8	x-128	A-128	A			
 0x1136	[D][P]		Battery Temperature	Battery Temperature	1	float	uint8	x-40	A-40	°C			
+0x1137	[D][P]		Alternator Control Mode	Alternator Control Mode	1	enum	uint8				0=High; 1=ExHigh; 2=Low; 3=Mid		0x000272
 0x1149	[D]		Cumulative Ash Ratio	Cumulative Ash Ratio	1	float	uint8	x	A	%			
 0x114A	[D]		DPF Pressure Diff	Pressure Difference between DPF Inlet and Outlet	1	float	uint8	x	A	kPa			
 0x114B	[D]		Estimated Catalyst Temp	Estimated Catalyst Temperature	1	float	uint8	x*5-40	A*5-40	°C			

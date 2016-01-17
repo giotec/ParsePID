@@ -162,7 +162,7 @@ The program uses pre-compiled paths if arguments are missing.
 	or for using predefined file paths: ParsePID.exe
 
 	Parsing parameter definitions from file "data/Subaru_mode22_def.csv"
-	Parsed 58 parameters.
+	Parsed 65 parameters.
 
 	Parsing support responses from file "data/2011 Impreza Diesel Responses.txt"
 	[SupportResponse: PID=0x0000 | SupportValue=0x183B8013]
@@ -241,9 +241,9 @@ The program uses pre-compiled paths if arguments are missing.
 	PID 0x1061 : N/A
 	PID 0x1063 : N/A
 	PID 0x1088 : N/A
-	PID 0x10A1 : N/A
-	PID 0x10A6 : N/A
-	PID 0x10A7 : N/A
+	PID 0x10A1 : Mass Airflow Sensor Voltage [V]
+	PID 0x10A6 : Accelerator Pedal Angle [%]
+	PID 0x10A7 : Fuel Temperature [°C]
 	PID 0x10AC : Primary Boost Control [%]
 	PID 0x10B2 : Alternator Duty [%]
 	PID 0x10E3 : Memorised Cruise Speed [km/h]
@@ -272,7 +272,7 @@ The program uses pre-compiled paths if arguments are missing.
 	PID 0x1130 : Quantity Correction Cylinder #4 [ms]
 	PID 0x1135 : Battery Current [A]
 	PID 0x1136 : Battery Temperature [°C]
-	PID 0x1137 : N/A
+	PID 0x1137 : Alternator Control Mode []
 	PID 0x1149 : Cumulative Ash Ratio [%]
 	PID 0x114A : Pressure Difference between DPF Inlet and Outlet [kPa]
 	PID 0x114B : Estimated Catalyst Temperature [°C]
@@ -379,7 +379,7 @@ The program uses pre-compiled paths if arguments are missing.
 	PID 0x125E : N/A
 	PID 0x125F : N/A
 	PID 0x1262 : N/A
-	Supported PIDs total: 183 | known: 51 | unknown: 132
+	Supported PIDs total: 183 | known: 55 | unknown: 128
 
 ### 6.2) Using "2014 Forester FB25 non-Turbo Responses.txt"
 
@@ -390,7 +390,7 @@ The program uses pre-compiled paths if arguments are missing.
 	or for using predefined file paths: ParsePID.exe
 
 	Parsing parameter definitions from file "data/Subaru_mode22_def.csv"
-	Parsed 58 parameters.
+	Parsed 65 parameters.
 
 	Parsing support responses from file "data/2014 Forester FB25 non-Turbo Responses.txt"
 	[SupportResponse: PID=0x1000 | SupportValue=0xFFC0000D]
@@ -438,10 +438,10 @@ The program uses pre-compiled paths if arguments are missing.
 	PID 0x1063 : N/A
 	PID 0x1088 : N/A
 	PID 0x1089 : N/A
-	PID 0x10A1 : N/A
-	PID 0x10A3 : N/A
-	PID 0x10A5 : N/A
-	PID 0x10A6 : N/A
+	PID 0x10A1 : Mass Airflow Sensor Voltage [V]
+	PID 0x10A3 : Fuel Injector #1 Pulse Width [ms]
+	PID 0x10A5 : Learned Ignition Timing [deg]
+	PID 0x10A6 : Accelerator Pedal Angle [%]
 	PID 0x10AE : N/A
 	PID 0x10B1 : N/A
 	PID 0x10B2 : Alternator Duty [%]
@@ -469,7 +469,7 @@ The program uses pre-compiled paths if arguments are missing.
 	PID 0x1134 : N/A
 	PID 0x1135 : Battery Current [A]
 	PID 0x1136 : Battery Temperature [°C]
-	PID 0x1137 : N/A
+	PID 0x1137 : Alternator Control Mode []
 	PID 0x1165 : N/A
 	PID 0x1166 : N/A
 	PID 0x1174 : N/A
@@ -525,7 +525,6 @@ The program uses pre-compiled paths if arguments are missing.
 	PID 0x127F : N/A
 	PID 0x12A1 : N/A
 	PID 0x12A2 : N/A
-	Supported PIDs total: 107 | known: 15 | unknown: 92
-
+	Supported PIDs total: 107 | known: 20 | unknown: 87
 
 ---
