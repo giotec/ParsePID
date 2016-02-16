@@ -14,6 +14,9 @@
 4.	[Build](#build)
 5.	[Data Files](#data_files)
 6.	[Demo Output](#demo_output)
+	*	[2011 Impreza Turbo Diesel 2.0 6MT, Euro 5, CID JZ4A110B](#JZ4A110B)
+	*	[2014 Forester FB25 non-Turbo, CVT, CID EA1M220F](#EA1M220F)
+	*	[2015 Forester Turbo Diesel 2.0 CVT, Euro 6, CID JF7C100D](#JF7C100D)
 
 ---
 
@@ -143,17 +146,24 @@ The program uses pre-compiled paths if arguments are missing.
 	2011 Impreza Turbo Diesel 2.0 6MT, Euro 5, CID `JZ4A110B`
 
 	courtesy of Subaru Diesel Crew
+
 *	`2014 Forester FB25 non-Turbo Responses.txt`
 
 	engine FB25, CVT, non-turbo, CID `EA1M220F`
 
 	contribution by Alexander
 
+*	`2015 Forester Diesel CVT Responses.txt`
+
+	2015 Forester Turbo Diesel 2.0 CVT, Euro 6, CID `JF7C100D`
+
+	courtesy of Subaru Diesel Crew
+
 ---
 
 ## <a name="demo_output"></a> 6) Demo Output
 
-### 6.1) Using "2011 Impreza Diesel Responses.txt"
+### <a name="JZ4A110B"></a>6.1) Using "2011 Impreza Diesel Responses.txt"
 
 	ParsePID: Parse Subaru OBD-II mode 22 definitions and support responses.
 	Usage:
@@ -381,7 +391,7 @@ The program uses pre-compiled paths if arguments are missing.
 	PID 0x1262 : N/A
 	Supported PIDs total: 183 | known: 55 | unknown: 128
 
-### 6.2) Using "2014 Forester FB25 non-Turbo Responses.txt"
+### <a name="EA1M220F"></a> 6.2) Using "2014 Forester FB25 non-Turbo Responses.txt"
 
 	ParsePID: Parse Subaru OBD-II mode 22 definitions and support responses.
 	Usage:
@@ -526,5 +536,243 @@ The program uses pre-compiled paths if arguments are missing.
 	PID 0x12A1 : N/A
 	PID 0x12A2 : N/A
 	Supported PIDs total: 107 | known: 20 | unknown: 87
+
+### <a name="JF7C100D"></a> 6.3) Using "2015 Forester Diesel CVT Responses.txt"
+
+	ParsePID: Parse Subaru OBD-II mode 22 definitions and support responses.
+	Usage:
+	ParsePID.exe <ResponseFile> <DefinitionsFile>
+	or: ParsePID.exe <ResponseFile>
+	or for using predefined file paths: ParsePID.exe
+
+	Parsing parameter definitions from file "data/Subaru_mode22_def.csv"
+	Parsed 65 parameters.
+
+	Parsing support responses from file "data/2015 Forester Diesel CVT Responses.txt"
+	[SupportResponse: PID=0x1000 | SupportValue=0xFFC00007]
+	[SupportResponse: PID=0x1020 | SupportValue=0x4079C01F]
+	[SupportResponse: PID=0x1040 | SupportValue=0x00000001]
+	[SupportResponse: PID=0x1060 | SupportValue=0xA0000001]
+	[SupportResponse: PID=0x1080 | SupportValue=0x01000001]
+	[SupportResponse: PID=0x10A0 | SupportValue=0x86104051]
+	[SupportResponse: PID=0x10C0 | SupportValue=0x00400003]
+	[SupportResponse: PID=0x10E0 | SupportValue=0x20000001]
+	[SupportResponse: PID=0x1100 | SupportValue=0x00000FFD]
+	[SupportResponse: PID=0x1120 | SupportValue=0xF0FF1203]
+	[SupportResponse: PID=0x1140 | SupportValue=0x00BC3FE9]
+	[SupportResponse: PID=0x1160 | SupportValue=0xFFFFFBFF]
+	[SupportResponse: PID=0x1180 | SupportValue=0xFFFF0001]
+	[SupportResponse: PID=0x11A0 | SupportValue=0xFE01FFE1]
+	[SupportResponse: PID=0x11C0 | SupportValue=0x1D507ED9]
+	[SupportResponse: PID=0x11E0 | SupportValue=0x00003001]
+	[SupportResponse: PID=0x1200 | SupportValue=0x00000001]
+	[SupportResponse: PID=0x1220 | SupportValue=0x0001F001]
+	[SupportResponse: PID=0x1240 | SupportValue=0x185CB1BF]
+	[SupportResponse: PID=0x1260 | SupportValue=0x41000015]
+	[SupportResponse: PID=0x1280 | SupportValue=0x030021C1]
+	[SupportResponse: PID=0x12A0 | SupportValue=0x00000001]
+	[SupportResponse: PID=0x12C0 | SupportValue=0x00001861]
+	[SupportResponse: PID=0x12E0 | SupportValue=0x00C00001]
+	Parsed 24 support responses.
+
+	Results:
+	PID 0x1001 : N/A
+	PID 0x1002 : N/A
+	PID 0x1003 : N/A
+	PID 0x1004 : N/A
+	PID 0x1005 : N/A
+	PID 0x1006 : N/A
+	PID 0x1007 : N/A
+	PID 0x1008 : N/A
+	PID 0x1009 : N/A
+	PID 0x100A : N/A
+	PID 0x101E : N/A
+	PID 0x101F : N/A
+	PID 0x1022 : N/A
+	PID 0x102A : Injector Code Cylinder #1 []
+	PID 0x102B : Injector Code Cylinder #2 []
+	PID 0x102C : Injector Code Cylinder #3 []
+	PID 0x102D : Injector Code Cylinder #4 []
+	PID 0x1030 : N/A
+	PID 0x1031 : N/A
+	PID 0x1032 : N/A
+	PID 0x103C : N/A
+	PID 0x103D : N/A
+	PID 0x103E : N/A
+	PID 0x103F : N/A
+	PID 0x1061 : N/A
+	PID 0x1063 : N/A
+	PID 0x1088 : N/A
+	PID 0x10A1 : Mass Airflow Sensor Voltage [V]
+	PID 0x10A6 : Accelerator Pedal Angle [%]
+	PID 0x10A7 : Fuel Temperature [°C]
+	PID 0x10AC : Primary Boost Control [%]
+	PID 0x10B2 : Alternator Duty [%]
+	PID 0x10BA : N/A
+	PID 0x10BC : N/A
+	PID 0x10CA : N/A
+	PID 0x10DF : N/A
+	PID 0x10E3 : Memorised Cruise Speed [km/h]
+	PID 0x1115 : N/A
+	PID 0x1116 : Final Injection Amount [mm³/st]
+	PID 0x1117 : N/A
+	PID 0x1118 : N/A
+	PID 0x1119 : N/A
+	PID 0x111A : N/A
+	PID 0x111B : Exhaust Gas Recirculation (EGR) Target Valve Opening Angle [deg]
+	PID 0x111C : Exhaust Gas Recirculation (EGR) Valve Opening Angle [deg]
+	PID 0x111D : N/A
+	PID 0x111E : N/A
+	PID 0x1121 : Target Engine Speed [rpm]
+	PID 0x1122 : N/A
+	PID 0x1123 : N/A
+	PID 0x1124 : N/A
+	PID 0x1129 : N/A
+	PID 0x112A : Mileage after Injector Learning [km]
+	PID 0x112B : Mileage after Injector Replacement [km]
+	PID 0x112C : Interior Heater [steps]
+	PID 0x112D : Quantity Correction Cylinder #1 [ms]
+	PID 0x112E : Quantity Correction Cylinder #2 [ms]
+	PID 0x112F : Quantity Correction Cylinder #3 [ms]
+	PID 0x1130 : Quantity Correction Cylinder #4 [ms]
+	PID 0x1134 : N/A
+	PID 0x1137 : Alternator Control Mode []
+	PID 0x113F : N/A
+	PID 0x1149 : Cumulative Ash Ratio [%]
+	PID 0x114B : Estimated Catalyst Temperature [°C]
+	PID 0x114C : Estimated DPF Temperature [°C]
+	PID 0x114D : Soot Accumulation Ratio [%]
+	PID 0x114E : Oil Dilution Ratio [%]
+	PID 0x1153 : N/A
+	PID 0x1154 : N/A
+	PID 0x1155 : Estimated Distance to Oil Change [km]
+	PID 0x1156 : Running Distance since last DPF Regeneration [km]
+	PID 0x1157 : DPF Regeneration Count [Times]
+	PID 0x1158 : Micro-Quantity-Injection Final Learning Values Cylinder #1 [ms]
+	PID 0x1159 : Micro-Quantity-Injection Final Learning Values Cylinder #2 [ms]
+	PID 0x115A : Micro-Quantity-Injection Final Learning Values Cylinder #3 [ms]
+	PID 0x115B : Micro-Quantity-Injection Final Learning Values Cylinder #4 [ms]
+	PID 0x115D : N/A
+	PID 0x1161 : Individual Pump Difference Learning Value [mA]
+	PID 0x1162 : Final Main Injection Period [ms]
+	PID 0x1163 : N/A
+	PID 0x1164 : N/A
+	PID 0x1165 : N/A
+	PID 0x1166 : N/A
+	PID 0x1167 : N/A
+	PID 0x1168 : N/A
+	PID 0x1169 : N/A
+	PID 0x116A : N/A
+	PID 0x116B : N/A
+	PID 0x116C : N/A
+	PID 0x116D : N/A
+	PID 0x116E : N/A
+	PID 0x116F : N/A
+	PID 0x1170 : N/A
+	PID 0x1171 : N/A
+	PID 0x1172 : N/A
+	PID 0x1173 : N/A
+	PID 0x1174 : N/A
+	PID 0x1175 : N/A
+	PID 0x1177 : N/A
+	PID 0x1178 : N/A
+	PID 0x1179 : N/A
+	PID 0x117A : N/A
+	PID 0x117B : N/A
+	PID 0x117C : N/A
+	PID 0x117D : N/A
+	PID 0x117E : N/A
+	PID 0x117F : N/A
+	PID 0x1181 : N/A
+	PID 0x1182 : N/A
+	PID 0x1183 : N/A
+	PID 0x1184 : N/A
+	PID 0x1185 : N/A
+	PID 0x1186 : N/A
+	PID 0x1187 : N/A
+	PID 0x1188 : N/A
+	PID 0x1189 : Oil Dilution Amount [kg]
+	PID 0x118A : N/A
+	PID 0x118B : N/A
+	PID 0x118C : N/A
+	PID 0x118D : N/A
+	PID 0x118E : N/A
+	PID 0x118F : N/A
+	PID 0x1190 : N/A
+	PID 0x11A1 : N/A
+	PID 0x11A2 : N/A
+	PID 0x11A3 : N/A
+	PID 0x11A4 : N/A
+	PID 0x11A5 : N/A
+	PID 0x11A6 : N/A
+	PID 0x11A7 : N/A
+	PID 0x11B0 : N/A
+	PID 0x11B1 : N/A
+	PID 0x11B2 : N/A
+	PID 0x11B3 : N/A
+	PID 0x11B4 : N/A
+	PID 0x11B5 : N/A
+	PID 0x11B6 : N/A
+	PID 0x11B7 : N/A
+	PID 0x11B8 : N/A
+	PID 0x11B9 : N/A
+	PID 0x11BA : N/A
+	PID 0x11BB : N/A
+	PID 0x11C4 : N/A
+	PID 0x11C5 : N/A
+	PID 0x11C6 : N/A
+	PID 0x11C8 : N/A
+	PID 0x11CA : N/A
+	PID 0x11CC : N/A
+	PID 0x11D2 : N/A
+	PID 0x11D3 : N/A
+	PID 0x11D4 : N/A
+	PID 0x11D5 : N/A
+	PID 0x11D6 : N/A
+	PID 0x11D7 : N/A
+	PID 0x11D9 : N/A
+	PID 0x11DA : N/A
+	PID 0x11DC : N/A
+	PID 0x11DD : N/A
+	PID 0x11F3 : N/A
+	PID 0x11F4 : N/A
+	PID 0x1230 : Stop Light Switch []
+	PID 0x1231 : Cruise Control Set/Coast Switch []
+	PID 0x1232 : Cruise Control Resume/Accelerate Switch []
+	PID 0x1233 : Brake Switch []
+	PID 0x1234 : Cruise Control Main Toggle Switch []
+	PID 0x1244 : N/A
+	PID 0x1245 : N/A
+	PID 0x124A : Cruise Control Cancel Switch []
+	PID 0x124C : Oil Level Switch []
+	PID 0x124D : N/A
+	PID 0x124E : N/A
+	PID 0x1251 : N/A
+	PID 0x1253 : N/A
+	PID 0x1254 : Injector Learning []
+	PID 0x1258 : N/A
+	PID 0x1259 : N/A
+	PID 0x125B : DPF Active Regeneration Switch []
+	PID 0x125C : N/A
+	PID 0x125D : N/A
+	PID 0x125E : N/A
+	PID 0x125F : N/A
+	PID 0x1262 : N/A
+	PID 0x1268 : N/A
+	PID 0x127C : N/A
+	PID 0x127E : N/A
+	PID 0x1287 : N/A
+	PID 0x1288 : N/A
+	PID 0x1293 : N/A
+	PID 0x1298 : N/A
+	PID 0x1299 : N/A
+	PID 0x129A : N/A
+	PID 0x12D4 : N/A
+	PID 0x12D5 : N/A
+	PID 0x12DA : N/A
+	PID 0x12DB : N/A
+	PID 0x12E9 : N/A
+	PID 0x12EA : N/A
+	Supported PIDs total: 197 | known: 46 | unknown: 151
 
 ---

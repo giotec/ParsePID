@@ -30,7 +30,7 @@ namespace ParsePID
 		const string folder = "data";
 
 		static string defsPath = System.IO.Path.Combine (folder, "Subaru_mode22_def.csv");
-		static string responsesPath = System.IO.Path.Combine (folder, "2011 Impreza Diesel Responses.txt");
+		static string responsesPath = System.IO.Path.Combine (folder, "2015 Forester Diesel CVT Responses.txt");
 
 		const char CsvSeparator = '\t';
 
