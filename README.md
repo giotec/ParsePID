@@ -172,7 +172,7 @@ The program uses pre-compiled paths if arguments are missing.
 	or for using predefined file paths: ParsePID.exe
 
 	Parsing parameter definitions from file "data/Subaru_mode22_def.csv"
-	Parsed 65 parameters.
+	Parsed 67 parameters.
 
 	Parsing support responses from file "data/2011 Impreza Diesel Responses.txt"
 	[SupportResponse: PID=0x0000 | SupportValue=0x183B8013]
@@ -217,7 +217,7 @@ The program uses pre-compiled paths if arguments are missing.
 	PID 0x001C : N/A
 	PID 0x001F : N/A
 	PID 0x0021 : N/A
-	PID 0x0023 : Fuel Rail Pressure (diesel, or gasoline direct inject) [kPa]
+	PID 0x0023 : Fuel Rail Pressure (diesel, or gasoline direct inject) [bar]
 	PID 0x0030 : N/A
 	PID 0x0031 : N/A
 	PID 0x0033 : N/A
@@ -307,7 +307,7 @@ The program uses pre-compiled paths if arguments are missing.
 	PID 0x1167 : N/A
 	PID 0x1168 : N/A
 	PID 0x1169 : N/A
-	PID 0x116A : N/A
+	PID 0x116A : Distance since DPF Warning Light Flashing [km]
 	PID 0x116B : N/A
 	PID 0x116C : N/A
 	PID 0x116D : N/A
@@ -389,7 +389,7 @@ The program uses pre-compiled paths if arguments are missing.
 	PID 0x125E : N/A
 	PID 0x125F : N/A
 	PID 0x1262 : N/A
-	Supported PIDs total: 183 | known: 55 | unknown: 128
+	Supported PIDs total: 183 | known: 56 | unknown: 127
 
 ### <a name="EA1M220F"></a> 6.2) Using "2014 Forester FB25 non-Turbo Responses.txt"
 
@@ -400,7 +400,7 @@ The program uses pre-compiled paths if arguments are missing.
 	or for using predefined file paths: ParsePID.exe
 
 	Parsing parameter definitions from file "data/Subaru_mode22_def.csv"
-	Parsed 65 parameters.
+	Parsed 67 parameters.
 
 	Parsing support responses from file "data/2014 Forester FB25 non-Turbo Responses.txt"
 	[SupportResponse: PID=0x1000 | SupportValue=0xFFC0000D]
@@ -546,7 +546,7 @@ The program uses pre-compiled paths if arguments are missing.
 	or for using predefined file paths: ParsePID.exe
 
 	Parsing parameter definitions from file "data/Subaru_mode22_def.csv"
-	Parsed 65 parameters.
+	Parsed 67 parameters.
 
 	Parsing support responses from file "data/2015 Forester Diesel CVT Responses.txt"
 	[SupportResponse: PID=0x1000 | SupportValue=0xFFC00007]
@@ -662,7 +662,7 @@ The program uses pre-compiled paths if arguments are missing.
 	PID 0x1167 : N/A
 	PID 0x1168 : N/A
 	PID 0x1169 : N/A
-	PID 0x116A : N/A
+	PID 0x116A : Distance since DPF Warning Light Flashing [km]
 	PID 0x116B : N/A
 	PID 0x116C : N/A
 	PID 0x116D : N/A
@@ -699,7 +699,7 @@ The program uses pre-compiled paths if arguments are missing.
 	PID 0x118E : N/A
 	PID 0x118F : N/A
 	PID 0x1190 : N/A
-	PID 0x11A1 : N/A
+	PID 0x11A1 : DPF Regeneration Attempts [Times]
 	PID 0x11A2 : N/A
 	PID 0x11A3 : N/A
 	PID 0x11A4 : N/A
@@ -773,6 +773,6 @@ The program uses pre-compiled paths if arguments are missing.
 	PID 0x12DB : N/A
 	PID 0x12E9 : N/A
 	PID 0x12EA : N/A
-	Supported PIDs total: 197 | known: 46 | unknown: 151
+	Supported PIDs total: 197 | known: 48 | unknown: 149
 
 ---

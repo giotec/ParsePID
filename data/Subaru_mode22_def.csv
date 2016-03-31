@@ -1,66 +1,68 @@
-PID	EngineTypes	Authentication	Name_Short	Name_Full	Length	Type	DataType_Raw	Formula	Formula_Bytes	Units	Enumerations	Description	SSM2_Reference
-0x0005	[D][P]		Coolant Temp	Coolant Temperature	1	float	uint8	x-40	A-40	°C			
-0x0023			Fuel Rail Pressure	Fuel Rail Pressure (diesel, or gasoline direct inject)	2	float	uint16	x*10	((A*256)+B)*10	kPa			
-0x003C			EGT Catalyst Inlet	Exhaust Gas Temperature (EGT) at Catalyst Inlet	2	float	uint16	x/10-40	((A*256)+B)/10-40	°C			
-0x003E			EGT DPF Inlet	Exhaust Gas Temperature (EGT) at DPF Inlet	2	float	uint16	x/10-40	((A*256)+B)/10-40	°C			
-0x102A	[D]	[A]	Injector Code Cyl #1	Injector Code Cylinder #1	15	raw							
-0x102B	[D]	[A]	Injector Code Cyl #2	Injector Code Cylinder #2	15	raw							
-0x102C	[D]	[A]	Injector Code Cyl #3	Injector Code Cylinder #3	15	raw							
-0x102D	[D]	[A]	Injector Code Cyl #4	Injector Code Cylinder #4	15	raw							
-0x10A1	[D][P]		MAF Voltage	Mass Airflow Sensor Voltage	1	float	uint8	x/50	A/50	V			0x00001D
-0x10A3	[P]		Fuel Injector #1	Fuel Injector #1 Pulse Width	1	float	uint8	x*0.256	A*0.256	ms		includes injector latency	0x000020
-0x10A4	[P]		Fuel Injector #2	Fuel Injector #2 Pulse Width	1	float	uint8	x*0.256	A*0.256	ms		includes injector latency	0x000021
-0x10A5	[P]		Learned Ignition Timing	Learned Ignition Timing	1	float	uint8	(x-128)/2	(A-128)/2	deg		Advance or retard amount when knocking has occurred.	0x000028
-0x10A6	[D][P]		Accelerator	Accelerator Pedal Angle	1	float	uint8	x*100/255	A*100/255	%			0x000029
-0x10A7	[D]		Fuel Temperature	Fuel Temperature	1	float	uint8	x-40	A-40	°C			0x00002A
-0x10AC	[D][P]		Primary Boost Control	Primary Boost Control	1	float	uint8	x*100/255	A*100/255	%		wastegate or VGT	
-0x10B2	[D][P]		Alternator Duty	Alternator Duty	1	int	uint8	x	A	%			0x00003A
-0x10B4	[P]		Intake VVT Advance Angle R	Intake VVT Advance Angle Right	1	float	uint8	x-50	A-50	deg			
-0x10B5	[P]		Intake VVT Advance Angle L	Intake VVT Advance Angle Left	1	float	uint8	x-50	A-50	deg			
-0x10E3	[D][P]		Memorised Cruise Speed	Memorised Cruise Speed	1	int	uint8	x	A	km/h			0x00010A
-0x1116	[D]		Final Injection Amount	Final Injection Amount	2	float	uint16	x/256	A+B/256	mm³/st			
-0x111B	[D]		EGR Target Valve Opening Angle	Exhaust Gas Recirculation (EGR) Target Valve Opening Angle	1	float	uint8	x-50	A-50	deg			
-0x111C	[D]		EGR Valve Opening Angle	Exhaust Gas Recirculation (EGR) Valve Opening Angle	1	float	uint8	x-50	A-50	deg			
-0x111F	[D]		Inlet Air Temp	Inlet Air Temperature (after air filter)	1	float	uint8	x-40	A-40	°C			
-0x1121	[D][P]		Target Engine Speed	Target Engine Speed	2	float	uint16	x/4	((A*256)+B)/4	rpm			
-0x112A	[D]		Mileage after Injector Learning	Mileage after Injector Learning	2	float	uint16	x*5	((A*256)+B)*5	km			
-0x112B	[D]		Mileage after Injector Replacement	Mileage after Injector Replacement	2	float	uint16	x*5	((A*256)+B)*5	km			
-0x112C	[D]		Interior Heater	Interior Heater	1	int	uint8	x	A	steps			
-0x112D	[D]		Quantity Correction Cyl #1	Quantity Correction Cylinder #1	1	float	uint8	(x-100)/100	(A-100)/100	ms			
-0x112E	[D]		Quantity Correction Cyl #2	Quantity Correction Cylinder #2	1	float	uint8	(x-100)/100	(A-100)/100	ms			
-0x112F	[D]		Quantity Correction Cyl #3	Quantity Correction Cylinder #3	1	float	uint8	(x-100)/100	(A-100)/100	ms			
-0x1130	[D]		Quantity Correction Cyl #4	Quantity Correction Cylinder #4	1	float	uint8	(x-100)/100	(A-100)/100	ms			
-0x1135	[D][P]		Battery Current	Battery Current	1	float	uint8	x-128	A-128	A			
-0x1136	[D][P]		Battery Temperature	Battery Temperature	1	float	uint8	x-40	A-40	°C			
-0x1137	[D][P]		Alternator Control Mode	Alternator Control Mode	1	enum	uint8				0=High; 1=ExHigh; 2=Low; 3=Mid		0x000272
-0x1149	[D]		Cumulative Ash Ratio	Cumulative Ash Ratio	1	float	uint8	x	A	%			
-0x114A	[D]		DPF Pressure Diff	Pressure Difference between DPF Inlet and Outlet	1	float	uint8	x	A	kPa			
-0x114B	[D]		Estimated Catalyst Temp	Estimated Catalyst Temperature	1	float	uint8	x*5-40	A*5-40	°C			
-0x114C	[D]		Estimated DPF Temp	Estimated DPF Temperature	1	float	uint8	x*5-40	A*5-40	°C			
-0x114D	[D]		Soot Accumulation Ratio	Soot Accumulation Ratio	1	float	uint8	x	A	%			
-0x114E	[D]		Oil Dilution Ratio	Oil Dilution Ratio	1	float	uint8	x	A	%			
-0x1155	[D]		Estimated Distance to Oil Change	Estimated Distance to Oil Change	1	float	uint8	x*100	A*100	km			
-0x1156	[D]		Running Distance since last DPF Regeneration	Running Distance since last DPF Regeneration	2	float	uint16	x	A*256+B	km			
-0x1157	[D]		DPF Regeneration Count	DPF Regeneration Count	2	float	uint16	x	A*256+B	Times			
-0x1158	[D]		Micro-Q Learning Values Cyl #1	Micro-Quantity-Injection Final Learning Values Cylinder #1	5	float	uint8[]	(x[i]-128)/200		ms		byte[0..4] = Pressure Level 1..5	0x00023D …
-0x1159	[D]		Micro-Q Learning Values Cyl #2	Micro-Quantity-Injection Final Learning Values Cylinder #2	5	float	uint8[]	(x[i]-128)/200		ms		byte[0..4] = Pressure Level 1..5	
-0x115A	[D]		Micro-Q Learning Values Cyl #3	Micro-Quantity-Injection Final Learning Values Cylinder #3	5	float	uint8[]	(x[i]-128)/200		ms		byte[0..4] = Pressure Level 1..5	
-0x115B	[D]		Micro-Q Learning Values Cyl #4	Micro-Quantity-Injection Final Learning Values Cylinder #4	5	float	uint8[]	(x[i]-128)/200		ms		byte[0..4] = Pressure Level 1..5	
-0x1161	[D]		SCV Learning Value	Individual Pump Difference Learning Value	2	float	uint16	x-1000	((A*256)+B)-1000	mA		Suction Control Valve	0x000238
-0x1162	[D]		Final Main Injection Period	Final Main Injection Period	2	float	uint16	x/1000	((A*256)+B)/1000	ms			0x000257
-0x1189	[D]	[A]	Oil Dilution Amount	Oil Dilution Amount	1	float	uint8	x/200	A/200	kg			
-0x122F	[D][P]		Clutch SW	Clutch Switch	1	enum	uint8				0x00=OFF; 0xFF=ON		0x000121 bit 7
-0x1230	[D][P]		Stop Light SW	Stop Light Switch	1	enum	uint8				0x00=OFF; 0xFF=ON		0x000121 bit 6
-0x1231	[D][P]		CC Set/Coast SW	Cruise Control Set/Coast Switch	1	enum	uint8				0x00=OFF; 0xFF=ON		0x000121 bit 5
-0x1232	[D][P]		CC Resume/Accelerate SW	Cruise Control Resume/Accelerate Switch	1	enum	uint8				0x00=OFF; 0xFF=ON		0x000121 bit 4
-0x1233	[D][P]		Brake SW	Brake Switch	1	enum	uint8				0x00=OFF; 0xFF=ON		0x000121 bit 3
-0x1234	[D][P]		CC Main Toggle SW	Cruise Control Main Toggle Switch	1	enum	uint8				0x00=OFF; 0xFF=ON		0x000121 bit 1
-0x124A	[D][P]		CC Cancel SW	Cruise Control Cancel Switch	1	enum	uint8				0x00=OFF; 0xFF=ON		0x0000D7 bit 0
-0x124C	[D][P]		Oil Level SW	Oil Level Switch	1	enum	uint8				0x00=LOW; 0xFF=HIGH (normal)		
-0x124F	[D]		Glow SW	Glow Relay Switch	1	enum	uint8				0x00=OFF; 0xFF=ON		
-0x1254	[D]		Injector Learning SW	Injector Learning	1	enum	uint8				0x00=OFF; 0xFF=ON		
-0x125B	[D]		DPF Active Regeneration SW	DPF Active Regeneration Switch	1	enum	uint8				0x00=OFF; 0xFF=ON		
-0xF100	[D][P]		SSMID	SSMID	3	raw							
-0xF182	[D][P]		ROMID	ROMID	5	raw							
-0xF190	[D][P]		VIN	Vehicle Identification Number (VIN)	17	ascii							
-0xF197	[D][P]		System String	System String	32	ascii							
+PID	EngineTypes	Authentication	Name_Short	Name_Full	Length	Type	DataType_Raw	Formula	Formula_Bytes	Units	DisplayMin	DisplayMax	Enumerations	Description	SSM2_Reference
+0x0005	[D][P]		Coolant Temp	Coolant Temperature	1	float	uint8	x-40	A-40	°C	-20	140		=OBD Mode 1 PID 0x05	
+0x0023			Fuel Rail Pressure	Fuel Rail Pressure (diesel, or gasoline direct inject)	2	float	uint16	x/10	((A*256)+B)/10	bar	0	2500		=OBD Mode 1 PID 0x23	0x0001EC [MPa]
+0x003C			EGT Catalyst Inlet	Exhaust Gas Temperature (EGT) at Catalyst Inlet	2	float	uint16	x/10-40	((A*256)+B)/10-40	°C	0	1000		=OBD Mode 1 PID 0x3C	
+0x003E			EGT DPF Inlet	Exhaust Gas Temperature (EGT) at DPF Inlet	2	float	uint16	x/10-40	((A*256)+B)/10-40	°C	0	1000		=OBD Mode 1 PID 0x3E	
+0x102A	[D]	[A]	Injector Code Cyl #1	Injector Code Cylinder #1	15	raw									
+0x102B	[D]	[A]	Injector Code Cyl #2	Injector Code Cylinder #2	15	raw									
+0x102C	[D]	[A]	Injector Code Cyl #3	Injector Code Cylinder #3	15	raw									
+0x102D	[D]	[A]	Injector Code Cyl #4	Injector Code Cylinder #4	15	raw									
+0x10A1	[D][P]		MAF Voltage	Mass Airflow Sensor Voltage	1	float	uint8	x/50	A/50	V	0	5.1			0x00001D
+0x10A3	[P]		Fuel Injector #1	Fuel Injector #1 Pulse Width	1	float	uint8	x*0.256	A*0.256	ms				includes injector latency	0x000020
+0x10A4	[P]		Fuel Injector #2	Fuel Injector #2 Pulse Width	1	float	uint8	x*0.256	A*0.256	ms				includes injector latency	0x000021
+0x10A5	[P]		Learned Ignition Timing	Learned Ignition Timing	1	float	uint8	(x-128)/2	(A-128)/2	deg				Advance or retard amount when knocking has occurred.	0x000028
+0x10A6	[D][P]		Accelerator	Accelerator Pedal Angle	1	float	uint8	x*100/255	A*100/255	%	0	100			0x000029
+0x10A7	[D]		Fuel Temperature	Fuel Temperature	1	float	uint8	x-40	A-40	°C	-20	90			0x00002A
+0x10AC	[D][P]		Primary Boost Control	Primary Boost Control	1	float	uint8	x*100/255	A*100/255	%	0	100		wastegate or VGT	
+0x10B2	[D][P]		Alternator Duty	Alternator Duty	1	float	uint8	x	A	%	0	100			0x00003A
+0x10B4	[P]		Intake VVT Advance Angle R	Intake VVT Advance Angle Right	1	float	uint8	x-50	A-50	deg					
+0x10B5	[P]		Intake VVT Advance Angle L	Intake VVT Advance Angle Left	1	float	uint8	x-50	A-50	deg					
+0x10E3	[D][P]		Memorised Cruise Speed	Memorised Cruise Speed	1	float	uint8	x	A	km/h	0	255			0x00010A
+0x1116	[D]		Final Injection Amount	Final Injection Amount	2	float	uint16	x/256	A+B/256	mm³/st	0	100			
+0x111B	[D]		EGR Target Valve Opening Angle	Exhaust Gas Recirculation (EGR) Target Valve Opening Angle	1	float	uint8	x-50	A-50	deg	0	90			
+0x111C	[D]		EGR Valve Opening Angle	Exhaust Gas Recirculation (EGR) Valve Opening Angle	1	float	uint8	x-50	A-50	deg	0	90			
+0x111F	[D]		Inlet Air Temp	Inlet Air Temperature (after air filter)	1	float	uint8	x-40	A-40	°C	-20	60			
+0x1121	[D][P]		Target Engine Speed	Target Engine Speed	2	float	uint16	x/4	((A*256)+B)/4	rpm	0	10000			
+0x112A	[D]		Mileage after Injector Learning	Mileage after Injector Learning	2	float	uint16	x*5	((A*256)+B)*5	km	0	5000			
+0x112B	[D]		Mileage after Injector Replacement	Mileage after Injector Replacement	2	float	uint16	x*5	((A*256)+B)*5	km	0	300000			
+0x112C	[D]		Interior Heater	Interior Heater	1	int	uint8	x	A	steps	0	5			
+0x112D	[D]		Quantity Correction Cyl #1	Quantity Correction Cylinder #1	1	float	uint8	(x-100)/100	(A-100)/100	ms	-1	1			
+0x112E	[D]		Quantity Correction Cyl #2	Quantity Correction Cylinder #2	1	float	uint8	(x-100)/100	(A-100)/100	ms	-1	1			
+0x112F	[D]		Quantity Correction Cyl #3	Quantity Correction Cylinder #3	1	float	uint8	(x-100)/100	(A-100)/100	ms	-1	1			
+0x1130	[D]		Quantity Correction Cyl #4	Quantity Correction Cylinder #4	1	float	uint8	(x-100)/100	(A-100)/100	ms	-1	1			
+0x1135	[D][P]		Battery Current	Battery Current	1	float	uint8	x-128	A-128	A	-100	100			
+0x1136	[D][P]		Battery Temperature	Battery Temperature	1	float	uint8	x-40	A-40	°C	-20	60			
+0x1137	[D][P]		Alternator Control Mode	Alternator Control Mode	1	enum	uint8				0	5	0=High; 1=ExHigh; 2=Low; 3=Mid		0x000272
+0x1149	[D]		Cumulative Ash Ratio	Cumulative Ash Ratio	1	float	uint8	x	A	%	0	100			
+0x114A	[D]		DPF Pressure Diff	Pressure Difference between DPF Inlet and Outlet	1	float	uint8	x	A	kPa	0	50			
+0x114B	[D]		Estimated Catalyst Temp	Estimated Catalyst Temperature	1	float	uint8	x*5-40	A*5-40	°C	0	1000			
+0x114C	[D]		Estimated DPF Temp	Estimated DPF Temperature	1	float	uint8	x*5-40	A*5-40	°C	0	1000			
+0x114D	[D]		Soot Accumulation Ratio	Soot Accumulation Ratio	1	float	uint8	x	A	%	0	150			
+0x114E	[D]		Oil Dilution Ratio	Oil Dilution Ratio	1	float	uint8	x	A	%	0	15			
+0x1155	[D]		Estimated Distance to Oil Change	Estimated Distance to Oil Change	1	float	uint8	x*100	A*100	km	0	15000			
+0x1156	[D]		Running Distance since last DPF Regeneration	Running Distance since last DPF Regeneration	2	float	uint16	x	A*256+B	km	0	5000			
+0x1157	[D]		DPF Regeneration Count	DPF Regeneration Count	2	float	uint16	x	A*256+B	Times	0	1000			
+0x1158	[D]		Micro-Q Learning Values Cyl #1	Micro-Quantity-Injection Final Learning Values Cylinder #1	8	float	uint8[]	(x[i]-128)/200		ms	-0.64	0.635		byte[0..4] = Pressure Level 1..5	0x00023D …
+0x1159	[D]		Micro-Q Learning Values Cyl #2	Micro-Quantity-Injection Final Learning Values Cylinder #2	8	float	uint8[]	(x[i]-128)/200		ms	-0.64	0.635		byte[0..4] = Pressure Level 1..5	
+0x115A	[D]		Micro-Q Learning Values Cyl #3	Micro-Quantity-Injection Final Learning Values Cylinder #3	8	float	uint8[]	(x[i]-128)/200		ms	-0.64	0.635		byte[0..4] = Pressure Level 1..5	
+0x115B	[D]		Micro-Q Learning Values Cyl #4	Micro-Quantity-Injection Final Learning Values Cylinder #4	8	float	uint8[]	(x[i]-128)/200		ms	-0.64	0.635		byte[0..4] = Pressure Level 1..5	
+0x1161	[D]		SCV Learning Value	Individual Pump Difference Learning Value	2	float	uint16	x-1000	((A*256)+B)-1000	mA	-1000	1000		Suction Control Valve	0x000238
+0x1162	[D]		Final Main Injection Period	Final Main Injection Period	2	float	uint16	x/1000	((A*256)+B)/1000	ms	0	2			0x000257
+0x116A	[D]	[A]	Distance since DPF Warning	Distance since DPF Warning Light Flashing	2	float	uint16	x	A*256+B	km	0	5000			N/A
+0x1189	[D]	[A]	Oil Dilution Amount	Oil Dilution Amount	1	float	uint8	x/200	A/200	kg	0	1			
+0x11A1	[D]	[A]	DPF Regeneration Attempts	DPF Regeneration Attempts	2	float	uint16	x	A*256+B	Times	0	1000		Euro 6 only	N/A
+0x122F	[D][P]		Clutch SW	Clutch Switch	1	enum	uint8				0	255	0x00=OFF; 0xFF=ON		0x000121 bit 7
+0x1230	[D][P]		Stop Light SW	Stop Light Switch	1	enum	uint8				0	255	0x00=OFF; 0xFF=ON		0x000121 bit 6
+0x1231	[D][P]		CC Set/Coast SW	Cruise Control Set/Coast Switch	1	enum	uint8				0	255	0x00=OFF; 0xFF=ON		0x000121 bit 5
+0x1232	[D][P]		CC Resume/Accelerate SW	Cruise Control Resume/Accelerate Switch	1	enum	uint8				0	255	0x00=OFF; 0xFF=ON		0x000121 bit 4
+0x1233	[D][P]		Brake SW	Brake Switch	1	enum	uint8				0	255	0x00=OFF; 0xFF=ON		0x000121 bit 3
+0x1234	[D][P]		CC Main Toggle SW	Cruise Control Main Toggle Switch	1	enum	uint8				0	255	0x00=OFF; 0xFF=ON		0x000121 bit 1
+0x124A	[D][P]		CC Cancel SW	Cruise Control Cancel Switch	1	enum	uint8				0	255	0x00=OFF; 0xFF=ON		0x0000D7 bit 0
+0x124C	[D][P]		Oil Level SW	Oil Level Switch	1	enum	uint8				0	255	0x00=LOW; 0xFF=HIGH (normal)		
+0x124F	[D]		Glow SW	Glow Relay Switch	1	enum	uint8				0	255	0x00=OFF; 0xFF=ON		
+0x1254	[D]		Injector Learning SW	Injector Learning	1	enum	uint8				0	255	0x00=OFF; 0xFF=ON		
+0x125B	[D]		DPF Active Regeneration SW	DPF Active Regeneration Switch	1	enum	uint8				0	255	0x00=OFF; 0xFF=ON		
+0xF100	[D][P]		SSMID	SSMID	3	raw									
+0xF182	[D][P]		ROMID	ROMID	5	raw									
+0xF190	[D][P]		VIN	Vehicle Identification Number (VIN)	17	ascii									
+0xF197	[D][P]		System String	System String	32	ascii									
