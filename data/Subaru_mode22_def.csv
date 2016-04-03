@@ -50,7 +50,7 @@ PID	EngineTypes	Authentication	Name_Short	Name_Full	Length	Type	DataType_Raw	For
 0x1162	[D]		Final Main Injection Period	Final Main Injection Period	2	float	uint16	x/1000	((A*256)+B)/1000	ms	0	2			0x000257
 0x116A	[D]	[A]	Distance since DPF Warning	Distance since DPF Warning Light Flashing	2	float	uint16	x	A*256+B	km	0	5000			N/A
 0x1189	[D]	[A]	Oil Dilution Amount	Oil Dilution Amount	1	float	uint8	x/200	A/200	kg	0	1			
-0x11A1	[D]	[A]	DPF Regeneration Attempts	DPF Regeneration Attempts	2	float	uint16	x	A*256+B	Times	0	1000		Euro 6 only	N/A
+0x11A1	[D]		DPF Regeneration Attempts	DPF Regeneration Attempts	2	float	uint16	x	A*256+B	Times	0	1000		Euro 6 only	N/A
 0x122F	[D][P]		Clutch SW	Clutch Switch	1	enum	uint8				0	255	0x00=OFF; 0xFF=ON		0x000121 bit 7
 0x1230	[D][P]		Stop Light SW	Stop Light Switch	1	enum	uint8				0	255	0x00=OFF; 0xFF=ON		0x000121 bit 6
 0x1231	[D][P]		CC Set/Coast SW	Cruise Control Set/Coast Switch	1	enum	uint8				0	255	0x00=OFF; 0xFF=ON		0x000121 bit 5
@@ -58,9 +58,10 @@ PID	EngineTypes	Authentication	Name_Short	Name_Full	Length	Type	DataType_Raw	For
 0x1233	[D][P]		Brake SW	Brake Switch	1	enum	uint8				0	255	0x00=OFF; 0xFF=ON		0x000121 bit 3
 0x1234	[D][P]		CC Main Toggle SW	Cruise Control Main Toggle Switch	1	enum	uint8				0	255	0x00=OFF; 0xFF=ON		0x000121 bit 1
 0x124A	[D][P]		CC Cancel SW	Cruise Control Cancel Switch	1	enum	uint8				0	255	0x00=OFF; 0xFF=ON		0x0000D7 bit 0
-0x124C	[D][P]		Oil Level SW	Oil Level Switch	1	enum	uint8				0	255	0x00=LOW; 0xFF=HIGH (normal)		
-0x124F	[D]		Glow SW	Glow Relay Switch	1	enum	uint8				0	255	0x00=OFF; 0xFF=ON		
-0x1254	[D]		Injector Learning SW	Injector Learning	1	enum	uint8				0	255	0x00=OFF; 0xFF=ON		
+0x124C	[D][P]		Oil Level SW	Oil Level Switch	1	enum	uint8				0	255	0x00=LOW; 0xFF=HIGH (normal)		0x000196 bit 5
+0x124F	[D]		Glow SW	Glow Relay Switch	1	enum	uint8				0	255	0x00=OFF; 0xFF=ON	glow plugs	0x000197 bit 5
+0x1251	[D]		Sub Fuel Pump SW	Sub Fuel Pump Relay Switch	1	enum	uint8				0	255	0x00=OFF; 0xFF=ON	electrical pump (near fuel tank)	0x000197 bit 3
+0x1254	[D]		Injector Learning SW	Injector Learning Switch	1	enum	uint8				0	255	0x00=Not Completed; 0xFF=Completed		0x000197 bit 0
 0x125B	[D]		DPF Active Regeneration SW	DPF Active Regeneration Switch	1	enum	uint8				0	255	0x00=OFF; 0xFF=ON		
 0xF100	[D][P]		SSMID	SSMID	3	raw									
 0xF182	[D][P]		ROMID	ROMID	5	raw									

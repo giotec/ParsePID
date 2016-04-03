@@ -172,7 +172,7 @@ The program uses pre-compiled paths if arguments are missing.
 	or for using predefined file paths: ParsePID.exe
 
 	Parsing parameter definitions from file "data/Subaru_mode22_def.csv"
-	Parsed 67 parameters.
+	Parsed 68 parameters.
 
 	Parsing support responses from file "data/2011 Impreza Diesel Responses.txt"
 	[SupportResponse: PID=0x0000 | SupportValue=0x183B8013]
@@ -376,9 +376,9 @@ The program uses pre-compiled paths if arguments are missing.
 	PID 0x124D : N/A
 	PID 0x124E : N/A
 	PID 0x124F : Glow Relay Switch []
-	PID 0x1251 : N/A
+	PID 0x1251 : Sub Fuel Pump Relay Switch []
 	PID 0x1253 : N/A
-	PID 0x1254 : Injector Learning []
+	PID 0x1254 : Injector Learning Switch []
 	PID 0x1257 : N/A
 	PID 0x1258 : N/A
 	PID 0x1259 : N/A
@@ -389,7 +389,7 @@ The program uses pre-compiled paths if arguments are missing.
 	PID 0x125E : N/A
 	PID 0x125F : N/A
 	PID 0x1262 : N/A
-	Supported PIDs total: 183 | known: 56 | unknown: 127
+	Supported PIDs total: 183 | known: 57 | unknown: 126
 
 ### <a name="EA1M220F"></a> 6.2) Using "2014 Forester FB25 non-Turbo Responses.txt"
 
@@ -400,7 +400,7 @@ The program uses pre-compiled paths if arguments are missing.
 	or for using predefined file paths: ParsePID.exe
 
 	Parsing parameter definitions from file "data/Subaru_mode22_def.csv"
-	Parsed 67 parameters.
+	Parsed 68 parameters.
 
 	Parsing support responses from file "data/2014 Forester FB25 non-Turbo Responses.txt"
 	[SupportResponse: PID=0x1000 | SupportValue=0xFFC0000D]
@@ -546,7 +546,7 @@ The program uses pre-compiled paths if arguments are missing.
 	or for using predefined file paths: ParsePID.exe
 
 	Parsing parameter definitions from file "data/Subaru_mode22_def.csv"
-	Parsed 67 parameters.
+	Parsed 68 parameters.
 
 	Parsing support responses from file "data/2015 Forester Diesel CVT Responses.txt"
 	[SupportResponse: PID=0x1000 | SupportValue=0xFFC00007]
@@ -747,9 +747,9 @@ The program uses pre-compiled paths if arguments are missing.
 	PID 0x124C : Oil Level Switch []
 	PID 0x124D : N/A
 	PID 0x124E : N/A
-	PID 0x1251 : N/A
+	PID 0x1251 : Sub Fuel Pump Relay Switch []
 	PID 0x1253 : N/A
-	PID 0x1254 : Injector Learning []
+	PID 0x1254 : Injector Learning Switch []
 	PID 0x1258 : N/A
 	PID 0x1259 : N/A
 	PID 0x125B : DPF Active Regeneration Switch []
@@ -773,6 +773,6 @@ The program uses pre-compiled paths if arguments are missing.
 	PID 0x12DB : N/A
 	PID 0x12E9 : N/A
 	PID 0x12EA : N/A
-	Supported PIDs total: 197 | known: 48 | unknown: 149
+	Supported PIDs total: 197 | known: 49 | unknown: 148
 
 ---
