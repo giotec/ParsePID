@@ -27,6 +27,7 @@ namespace ParsePID
 {
 	static class MainClass
 	{
+		const bool IncludeSupportPIDs = true;
 		const string folder = "data";
 
 		static string defsPath = System.IO.Path.Combine (folder, "Subaru_mode22_def.csv");
@@ -37,7 +38,7 @@ namespace ParsePID
 		static List<Parameter> parameters;
 		static List<SupportResponse> supportResponses;
 
-		static int countSupportedKnown = 0, countSupportedUnknown = 0;
+		static List<Parameter> parametersSupported = new List<Parameter> (256);
 
 		public static int Main (string[] args)
 		{
@@ -79,36 +80,52 @@ namespace ParsePID
 			}
 			Console.WriteLine ("Parsed {0} support responses.", supportResponses.Count);
 
-
-			Console.WriteLine ("\nResults:");
-
+			// check PIDs, generate results
 			foreach (var r in supportResponses) {
-				PrintParameterSupport (r);
+				if (IncludeSupportPIDs) {
+					SearchAddParameter (r.PID);
+				}
+				ProcessParameterSupport (r);
 			}
+			// sort by PID and remove duplicates (SupportPIDs)
+			var results = parametersSupported.OrderBy (p => p.PID).Distinct (new ParameterPIDComparer ()).ToList ();
+
+			// output results
+			Console.WriteLine ("\nResults:");
+			foreach (var p in results) {
+				PrintParameter (p);
+			}
+
+			int countSupportedKnown = results.Count (p => p.IsDefined);
+			int countSupportedUnknown = results.Count - countSupportedKnown;
+
 			Console.WriteLine ("Supported PIDs total: {0} | known: {1} | unknown: {2}",
-				countSupportedKnown + countSupportedUnknown, countSupportedKnown, countSupportedUnknown);
+				results.Count, countSupportedKnown, countSupportedUnknown);
 
 			return 0;
 		}
 
-		static void PrintParameterSupport (SupportResponse r)
+		static void SearchAddParameter (UInt16 pid)
 		{
-			const bool IncludeNextSupportPID = false;
-
-			var supportedPIDs = Support.GetSupportedPIDs (r.SupportValue, r.PID, IncludeNextSupportPID);
-			foreach (var pid in supportedPIDs) {
-				var parameter = parameters.SingleOrDefault (p => p.PID == pid);
-
-				Console.Write ("PID 0x{0:X4} : ", pid);
-
-				if (parameter != null) {
-					++countSupportedKnown;
-					Console.WriteLine ("{0} [{1}]", parameter.NameFull, parameter.Units);
-				} else {
-					++countSupportedUnknown;
-					Console.WriteLine ("N/A");
-				}
+			var parameter = parameters.SingleOrDefault (p => p.PID == pid);
+			if (parameter == null) {
+				// definition is missing, PID is supported but unknown
+				parameter = new Parameter (pid);
 			}
+			parametersSupported.Add (parameter);
+		}
+
+		static void ProcessParameterSupport (SupportResponse r)
+		{
+			var supportedPIDs = Support.GetSupportedPIDs (r.SupportValue, r.PID, IncludeSupportPIDs);
+			foreach (var pid in supportedPIDs) {
+				SearchAddParameter (pid);
+			}
+		}
+
+		static void PrintParameter (Parameter parameter)
+		{
+			Console.WriteLine ("PID 0x{0:X4} : {1} [{2}]", parameter.PID, parameter.NameFull, parameter.Units);
 		}
 	}
 }

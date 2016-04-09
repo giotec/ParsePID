@@ -33,5 +33,10 @@ namespace ParsePID
 			return string.Format ("[SupportResponse: PID=0x{0:X4} | SupportValue=0x{1:X8}]",
 				PID, SupportValue);
 		}
+
+		public override int GetHashCode ()
+		{
+			return PID | (int)SupportValue;
+		}
 	}
 }

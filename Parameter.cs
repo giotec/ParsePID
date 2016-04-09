@@ -20,6 +20,7 @@
 
 
 using System;
+using System.Collections.Generic;
 
 namespace ParsePID
 {
@@ -56,14 +57,46 @@ namespace ParsePID
 			set { length = value; }
 		}
 
+		public bool IsDefined {
+			get { return Length > 0 && !string.IsNullOrEmpty (NameFull); }
+		}
+
+		public override int GetHashCode ()
+		{
+			return pid | Length << 16 | Units.GetHashCode () | NameFull.GetHashCode () << 24 | NameShort.GetHashCode () << 4;
+		}
+
 		public Parameter ()
 		{
+		}
+
+		public Parameter (UInt16 pid)
+		{
+			PID = pid;
+			NameFull = "{?}";
+			NameShort = "{?}";
+			Units = "?";
+			Length = 0;
 		}
 
 		public override string ToString ()
 		{
 			return string.Format ("[Parameter: PID={0:X4} | NameFull={1} | Units={2} | Length={3}]",
 				PID, NameFull, Units, Length);
+		}
+	}
+
+	// only care about PID
+	public sealed class ParameterPIDComparer : IEqualityComparer<Parameter>
+	{
+		public bool Equals (Parameter x, Parameter y)
+		{
+			return x.PID == y.PID;
+		}
+
+		public int GetHashCode (Parameter obj)
+		{
+			return obj.PID;
 		}
 	}
 }

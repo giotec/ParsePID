@@ -172,7 +172,7 @@ The program uses pre-compiled paths if arguments are missing.
 	or for using predefined file paths: ParsePID.exe
 
 	Parsing parameter definitions from file "data/Subaru_mode22_def.csv"
-	Parsed 68 parameters.
+	Parsed 100 parameters.
 
 	Parsing support responses from file "data/2011 Impreza Diesel Responses.txt"
 	[SupportResponse: PID=0x0000 | SupportValue=0x183B8013]
@@ -206,73 +206,91 @@ The program uses pre-compiled paths if arguments are missing.
 	Parsed 28 support responses.
 
 	Results:
-	PID 0x0004 : N/A
+	PID 0x0000 : PIDs Supported [0001..0020] []
+	PID 0x0004 : {?} [?]
 	PID 0x0005 : Coolant Temperature [°C]
-	PID 0x000B : N/A
-	PID 0x000C : N/A
-	PID 0x000D : N/A
-	PID 0x000F : N/A
-	PID 0x0010 : N/A
-	PID 0x0011 : N/A
-	PID 0x001C : N/A
-	PID 0x001F : N/A
-	PID 0x0021 : N/A
+	PID 0x000B : {?} [?]
+	PID 0x000C : {?} [?]
+	PID 0x000D : {?} [?]
+	PID 0x000F : {?} [?]
+	PID 0x0010 : {?} [?]
+	PID 0x0011 : {?} [?]
+	PID 0x001C : {?} [?]
+	PID 0x001F : {?} [?]
+	PID 0x0020 : PIDs Supported [0021..0040] []
+	PID 0x0021 : {?} [?]
 	PID 0x0023 : Fuel Rail Pressure (diesel, or gasoline direct inject) [bar]
-	PID 0x0030 : N/A
-	PID 0x0031 : N/A
-	PID 0x0033 : N/A
+	PID 0x0030 : {?} [?]
+	PID 0x0031 : {?} [?]
+	PID 0x0033 : {?} [?]
 	PID 0x003C : Exhaust Gas Temperature (EGT) at Catalyst Inlet [°C]
 	PID 0x003E : Exhaust Gas Temperature (EGT) at DPF Inlet [°C]
-	PID 0x0042 : N/A
-	PID 0x0046 : N/A
-	PID 0x0049 : N/A
-	PID 0x004A : N/A
-	PID 0x004C : N/A
-	PID 0x005A : N/A
-	PID 0x1001 : N/A
-	PID 0x1002 : N/A
-	PID 0x1003 : N/A
-	PID 0x1004 : N/A
-	PID 0x1005 : N/A
-	PID 0x1006 : N/A
-	PID 0x1007 : N/A
-	PID 0x1008 : N/A
-	PID 0x1009 : N/A
-	PID 0x100A : N/A
-	PID 0x101F : N/A
-	PID 0x1022 : N/A
+	PID 0x0040 : PIDs Supported [0041..0060] []
+	PID 0x0042 : {?} [?]
+	PID 0x0046 : {?} [?]
+	PID 0x0049 : {?} [?]
+	PID 0x004A : {?} [?]
+	PID 0x004C : {?} [?]
+	PID 0x005A : {?} [?]
+	PID 0x0060 : PIDs Supported [0061..0080] []
+	PID 0x0080 : PIDs Supported [0081..00A0] []
+	PID 0x00A0 : PIDs Supported [00A1..00C0] []
+	PID 0x00C0 : PIDs Supported [00C1..00E0] []
+	PID 0x00E0 : PIDs Supported [00E1..0100] []
+	PID 0x1000 : PIDs Supported [1001..1020] []
+	PID 0x1001 : {?} [?]
+	PID 0x1002 : {?} [?]
+	PID 0x1003 : {?} [?]
+	PID 0x1004 : {?} [?]
+	PID 0x1005 : {?} [?]
+	PID 0x1006 : {?} [?]
+	PID 0x1007 : {?} [?]
+	PID 0x1008 : {?} [?]
+	PID 0x1009 : {?} [?]
+	PID 0x100A : {?} [?]
+	PID 0x101F : {?} [?]
+	PID 0x1020 : PIDs Supported [1021..1040] []
+	PID 0x1022 : {?} [?]
 	PID 0x102A : Injector Code Cylinder #1 []
 	PID 0x102B : Injector Code Cylinder #2 []
 	PID 0x102C : Injector Code Cylinder #3 []
 	PID 0x102D : Injector Code Cylinder #4 []
-	PID 0x1030 : N/A
-	PID 0x1031 : N/A
-	PID 0x1032 : N/A
-	PID 0x1061 : N/A
-	PID 0x1063 : N/A
-	PID 0x1088 : N/A
+	PID 0x1030 : {?} [?]
+	PID 0x1031 : {?} [?]
+	PID 0x1032 : {?} [?]
+	PID 0x1040 : PIDs Supported [1041..1060] []
+	PID 0x1060 : PIDs Supported [1061..1080] []
+	PID 0x1061 : {?} [?]
+	PID 0x1063 : {?} [?]
+	PID 0x1080 : PIDs Supported [1081..10A0] []
+	PID 0x1088 : {?} [?]
+	PID 0x10A0 : PIDs Supported [10A1..10C0] []
 	PID 0x10A1 : Mass Airflow Sensor Voltage [V]
 	PID 0x10A6 : Accelerator Pedal Angle [%]
 	PID 0x10A7 : Fuel Temperature [°C]
 	PID 0x10AC : Primary Boost Control [%]
 	PID 0x10B2 : Alternator Duty [%]
+	PID 0x10C0 : PIDs Supported [10C1..10E0] []
+	PID 0x10E0 : PIDs Supported [10E1..1100] []
 	PID 0x10E3 : Memorised Cruise Speed [km/h]
-	PID 0x1115 : N/A
+	PID 0x1100 : PIDs Supported [1101..1120] []
+	PID 0x1115 : {?} [?]
 	PID 0x1116 : Final Injection Amount [mm³/st]
-	PID 0x1117 : N/A
-	PID 0x1118 : N/A
-	PID 0x1119 : N/A
-	PID 0x111A : N/A
+	PID 0x1117 : {?} [?]
+	PID 0x1118 : {?} [?]
+	PID 0x1119 : {?} [?]
+	PID 0x111A : {?} [?]
 	PID 0x111B : Exhaust Gas Recirculation (EGR) Target Valve Opening Angle [deg]
 	PID 0x111C : Exhaust Gas Recirculation (EGR) Valve Opening Angle [deg]
-	PID 0x111D : N/A
-	PID 0x111E : N/A
+	PID 0x111D : {?} [?]
+	PID 0x111E : {?} [?]
 	PID 0x111F : Inlet Air Temperature (after air filter) [°C]
+	PID 0x1120 : PIDs Supported [1121..1140] []
 	PID 0x1121 : Target Engine Speed [rpm]
-	PID 0x1122 : N/A
-	PID 0x1123 : N/A
-	PID 0x1124 : N/A
-	PID 0x1129 : N/A
+	PID 0x1122 : {?} [?]
+	PID 0x1123 : {?} [?]
+	PID 0x1124 : {?} [?]
+	PID 0x1129 : {?} [?]
 	PID 0x112A : Mileage after Injector Learning [km]
 	PID 0x112B : Mileage after Injector Replacement [km]
 	PID 0x112C : Interior Heater [steps]
@@ -283,14 +301,15 @@ The program uses pre-compiled paths if arguments are missing.
 	PID 0x1135 : Battery Current [A]
 	PID 0x1136 : Battery Temperature [°C]
 	PID 0x1137 : Alternator Control Mode []
+	PID 0x1140 : PIDs Supported [1141..1160] []
 	PID 0x1149 : Cumulative Ash Ratio [%]
 	PID 0x114A : Pressure Difference between DPF Inlet and Outlet [kPa]
 	PID 0x114B : Estimated Catalyst Temperature [°C]
 	PID 0x114C : Estimated DPF Temperature [°C]
 	PID 0x114D : Soot Accumulation Ratio [%]
 	PID 0x114E : Oil Dilution Ratio [%]
-	PID 0x1153 : N/A
-	PID 0x1154 : N/A
+	PID 0x1153 : {?} [?]
+	PID 0x1154 : {?} [?]
 	PID 0x1155 : Estimated Distance to Oil Change [km]
 	PID 0x1156 : Running Distance since last DPF Regeneration [km]
 	PID 0x1157 : DPF Regeneration Count [Times]
@@ -298,98 +317,107 @@ The program uses pre-compiled paths if arguments are missing.
 	PID 0x1159 : Micro-Quantity-Injection Final Learning Values Cylinder #2 [ms]
 	PID 0x115A : Micro-Quantity-Injection Final Learning Values Cylinder #3 [ms]
 	PID 0x115B : Micro-Quantity-Injection Final Learning Values Cylinder #4 [ms]
+	PID 0x1160 : PIDs Supported [1161..1180] []
 	PID 0x1161 : Individual Pump Difference Learning Value [mA]
 	PID 0x1162 : Final Main Injection Period [ms]
-	PID 0x1163 : N/A
-	PID 0x1164 : N/A
-	PID 0x1165 : N/A
-	PID 0x1166 : N/A
-	PID 0x1167 : N/A
-	PID 0x1168 : N/A
-	PID 0x1169 : N/A
+	PID 0x1163 : {?} [?]
+	PID 0x1164 : {?} [?]
+	PID 0x1165 : {?} [?]
+	PID 0x1166 : {?} [?]
+	PID 0x1167 : {?} [?]
+	PID 0x1168 : {?} [?]
+	PID 0x1169 : {?} [?]
 	PID 0x116A : Distance since DPF Warning Light Flashing [km]
-	PID 0x116B : N/A
-	PID 0x116C : N/A
-	PID 0x116D : N/A
-	PID 0x116E : N/A
-	PID 0x116F : N/A
-	PID 0x1170 : N/A
-	PID 0x1171 : N/A
-	PID 0x1172 : N/A
-	PID 0x1173 : N/A
-	PID 0x1174 : N/A
-	PID 0x1175 : N/A
-	PID 0x1176 : N/A
-	PID 0x1177 : N/A
-	PID 0x1178 : N/A
-	PID 0x1179 : N/A
-	PID 0x117A : N/A
-	PID 0x117B : N/A
-	PID 0x117C : N/A
-	PID 0x117D : N/A
-	PID 0x117E : N/A
-	PID 0x117F : N/A
-	PID 0x1181 : N/A
-	PID 0x1182 : N/A
-	PID 0x1183 : N/A
-	PID 0x1184 : N/A
-	PID 0x1185 : N/A
-	PID 0x1186 : N/A
-	PID 0x1187 : N/A
-	PID 0x1188 : N/A
+	PID 0x116B : {?} [?]
+	PID 0x116C : {?} [?]
+	PID 0x116D : {?} [?]
+	PID 0x116E : {?} [?]
+	PID 0x116F : {?} [?]
+	PID 0x1170 : {?} [?]
+	PID 0x1171 : {?} [?]
+	PID 0x1172 : {?} [?]
+	PID 0x1173 : {?} [?]
+	PID 0x1174 : {?} [?]
+	PID 0x1175 : {?} [?]
+	PID 0x1176 : {?} [?]
+	PID 0x1177 : {?} [?]
+	PID 0x1178 : {?} [?]
+	PID 0x1179 : {?} [?]
+	PID 0x117A : {?} [?]
+	PID 0x117B : {?} [?]
+	PID 0x117C : {?} [?]
+	PID 0x117D : {?} [?]
+	PID 0x117E : {?} [?]
+	PID 0x117F : {?} [?]
+	PID 0x1180 : PIDs Supported [1181..11A0] []
+	PID 0x1181 : {?} [?]
+	PID 0x1182 : {?} [?]
+	PID 0x1183 : {?} [?]
+	PID 0x1184 : {?} [?]
+	PID 0x1185 : {?} [?]
+	PID 0x1186 : {?} [?]
+	PID 0x1187 : {?} [?]
+	PID 0x1188 : {?} [?]
 	PID 0x1189 : Oil Dilution Amount [kg]
-	PID 0x118A : N/A
-	PID 0x118B : N/A
-	PID 0x118C : N/A
-	PID 0x118D : N/A
-	PID 0x118E : N/A
-	PID 0x118F : N/A
-	PID 0x1190 : N/A
-	PID 0x11C2 : N/A
-	PID 0x11C4 : N/A
-	PID 0x11C5 : N/A
-	PID 0x11C6 : N/A
-	PID 0x11C8 : N/A
-	PID 0x11CA : N/A
-	PID 0x11CC : N/A
-	PID 0x11D2 : N/A
-	PID 0x11D3 : N/A
-	PID 0x11D4 : N/A
-	PID 0x11D5 : N/A
-	PID 0x11D6 : N/A
-	PID 0x11D7 : N/A
-	PID 0x11D9 : N/A
-	PID 0x11DA : N/A
-	PID 0x11DC : N/A
-	PID 0x11DD : N/A
-	PID 0x11F3 : N/A
-	PID 0x11F4 : N/A
+	PID 0x118A : {?} [?]
+	PID 0x118B : {?} [?]
+	PID 0x118C : {?} [?]
+	PID 0x118D : {?} [?]
+	PID 0x118E : {?} [?]
+	PID 0x118F : {?} [?]
+	PID 0x1190 : {?} [?]
+	PID 0x11A0 : PIDs Supported [11A1..11C0] []
+	PID 0x11C0 : PIDs Supported [11C1..11E0] []
+	PID 0x11C2 : {?} [?]
+	PID 0x11C4 : {?} [?]
+	PID 0x11C5 : {?} [?]
+	PID 0x11C6 : {?} [?]
+	PID 0x11C8 : {?} [?]
+	PID 0x11CA : {?} [?]
+	PID 0x11CC : {?} [?]
+	PID 0x11D2 : {?} [?]
+	PID 0x11D3 : {?} [?]
+	PID 0x11D4 : {?} [?]
+	PID 0x11D5 : {?} [?]
+	PID 0x11D6 : {?} [?]
+	PID 0x11D7 : {?} [?]
+	PID 0x11D9 : {?} [?]
+	PID 0x11DA : {?} [?]
+	PID 0x11DC : {?} [?]
+	PID 0x11DD : {?} [?]
+	PID 0x11E0 : PIDs Supported [11E1..1200] []
+	PID 0x11F3 : {?} [?]
+	PID 0x11F4 : {?} [?]
+	PID 0x1200 : PIDs Supported [1201..1220] []
+	PID 0x1220 : PIDs Supported [1221..1240] []
 	PID 0x122F : Clutch Switch []
 	PID 0x1230 : Stop Light Switch []
 	PID 0x1231 : Cruise Control Set/Coast Switch []
 	PID 0x1232 : Cruise Control Resume/Accelerate Switch []
 	PID 0x1233 : Brake Switch []
 	PID 0x1234 : Cruise Control Main Toggle Switch []
-	PID 0x1244 : N/A
-	PID 0x1245 : N/A
+	PID 0x1240 : PIDs Supported [1241..1260] []
+	PID 0x1244 : {?} [?]
+	PID 0x1245 : {?} [?]
 	PID 0x124A : Cruise Control Cancel Switch []
-	PID 0x124D : N/A
-	PID 0x124E : N/A
+	PID 0x124D : {?} [?]
+	PID 0x124E : {?} [?]
 	PID 0x124F : Glow Relay Switch []
 	PID 0x1251 : Sub Fuel Pump Relay Switch []
-	PID 0x1253 : N/A
+	PID 0x1253 : {?} [?]
 	PID 0x1254 : Injector Learning Switch []
-	PID 0x1257 : N/A
-	PID 0x1258 : N/A
-	PID 0x1259 : N/A
-	PID 0x125A : N/A
+	PID 0x1257 : {?} [?]
+	PID 0x1258 : {?} [?]
+	PID 0x1259 : {?} [?]
+	PID 0x125A : {?} [?]
 	PID 0x125B : DPF Active Regeneration Switch []
-	PID 0x125C : N/A
-	PID 0x125D : N/A
-	PID 0x125E : N/A
-	PID 0x125F : N/A
-	PID 0x1262 : N/A
-	Supported PIDs total: 183 | known: 57 | unknown: 126
+	PID 0x125C : {?} [?]
+	PID 0x125D : {?} [?]
+	PID 0x125E : {?} [?]
+	PID 0x125F : {?} [?]
+	PID 0x1260 : PIDs Supported [1261..1280] []
+	PID 0x1262 : {?} [?]
+	Supported PIDs total: 211 | known: 85 | unknown: 126
 
 ### <a name="EA1M220F"></a> 6.2) Using "2014 Forester FB25 non-Turbo Responses.txt"
 
@@ -400,7 +428,7 @@ The program uses pre-compiled paths if arguments are missing.
 	or for using predefined file paths: ParsePID.exe
 
 	Parsing parameter definitions from file "data/Subaru_mode22_def.csv"
-	Parsed 68 parameters.
+	Parsed 100 parameters.
 
 	Parsing support responses from file "data/2014 Forester FB25 non-Turbo Responses.txt"
 	[SupportResponse: PID=0x1000 | SupportValue=0xFFC0000D]
@@ -428,114 +456,136 @@ The program uses pre-compiled paths if arguments are missing.
 	Parsed 22 support responses.
 
 	Results:
-	PID 0x1001 : N/A
-	PID 0x1002 : N/A
-	PID 0x1003 : N/A
-	PID 0x1004 : N/A
-	PID 0x1005 : N/A
-	PID 0x1006 : N/A
-	PID 0x1007 : N/A
-	PID 0x1008 : N/A
-	PID 0x1009 : N/A
-	PID 0x100A : N/A
-	PID 0x101D : N/A
-	PID 0x101E : N/A
-	PID 0x1022 : N/A
-	PID 0x1024 : N/A
-	PID 0x103C : N/A
-	PID 0x103D : N/A
-	PID 0x1061 : N/A
-	PID 0x1063 : N/A
-	PID 0x1088 : N/A
-	PID 0x1089 : N/A
+	PID 0x1000 : PIDs Supported [1001..1020] []
+	PID 0x1001 : {?} [?]
+	PID 0x1002 : {?} [?]
+	PID 0x1003 : {?} [?]
+	PID 0x1004 : {?} [?]
+	PID 0x1005 : {?} [?]
+	PID 0x1006 : {?} [?]
+	PID 0x1007 : {?} [?]
+	PID 0x1008 : {?} [?]
+	PID 0x1009 : {?} [?]
+	PID 0x100A : {?} [?]
+	PID 0x101D : {?} [?]
+	PID 0x101E : {?} [?]
+	PID 0x1020 : PIDs Supported [1021..1040] []
+	PID 0x1022 : {?} [?]
+	PID 0x1024 : {?} [?]
+	PID 0x103C : {?} [?]
+	PID 0x103D : {?} [?]
+	PID 0x1040 : PIDs Supported [1041..1060] []
+	PID 0x1060 : PIDs Supported [1061..1080] []
+	PID 0x1061 : {?} [?]
+	PID 0x1063 : {?} [?]
+	PID 0x1080 : PIDs Supported [1081..10A0] []
+	PID 0x1088 : {?} [?]
+	PID 0x1089 : {?} [?]
+	PID 0x10A0 : PIDs Supported [10A1..10C0] []
 	PID 0x10A1 : Mass Airflow Sensor Voltage [V]
 	PID 0x10A3 : Fuel Injector #1 Pulse Width [ms]
 	PID 0x10A5 : Learned Ignition Timing [deg]
 	PID 0x10A6 : Accelerator Pedal Angle [%]
-	PID 0x10AE : N/A
-	PID 0x10B1 : N/A
+	PID 0x10AE : {?} [?]
+	PID 0x10B1 : {?} [?]
 	PID 0x10B2 : Alternator Duty [%]
 	PID 0x10B4 : Intake VVT Advance Angle Right [deg]
 	PID 0x10B5 : Intake VVT Advance Angle Left [deg]
-	PID 0x10B6 : N/A
-	PID 0x10B7 : N/A
-	PID 0x10B8 : N/A
-	PID 0x10B9 : N/A
-	PID 0x10BA : N/A
-	PID 0x10BC : N/A
-	PID 0x10BE : N/A
-	PID 0x10C1 : N/A
-	PID 0x10DE : N/A
-	PID 0x10DF : N/A
+	PID 0x10B6 : {?} [?]
+	PID 0x10B7 : {?} [?]
+	PID 0x10B8 : {?} [?]
+	PID 0x10B9 : {?} [?]
+	PID 0x10BA : {?} [?]
+	PID 0x10BC : {?} [?]
+	PID 0x10BE : {?} [?]
+	PID 0x10C0 : PIDs Supported [10C1..10E0] []
+	PID 0x10C1 : {?} [?]
+	PID 0x10DE : {?} [?]
+	PID 0x10DF : {?} [?]
+	PID 0x10E0 : PIDs Supported [10E1..1100] []
 	PID 0x10E3 : Memorised Cruise Speed [km/h]
-	PID 0x10E5 : N/A
-	PID 0x10E7 : N/A
-	PID 0x110B : N/A
-	PID 0x110C : N/A
-	PID 0x110D : N/A
-	PID 0x110E : N/A
-	PID 0x1114 : N/A
+	PID 0x10E5 : {?} [?]
+	PID 0x10E7 : {?} [?]
+	PID 0x1100 : PIDs Supported [1101..1120] []
+	PID 0x110B : {?} [?]
+	PID 0x110C : {?} [?]
+	PID 0x110D : {?} [?]
+	PID 0x110E : {?} [?]
+	PID 0x1114 : {?} [?]
+	PID 0x1120 : PIDs Supported [1121..1140] []
 	PID 0x1121 : Target Engine Speed [rpm]
-	PID 0x1134 : N/A
+	PID 0x1134 : {?} [?]
 	PID 0x1135 : Battery Current [A]
 	PID 0x1136 : Battery Temperature [°C]
 	PID 0x1137 : Alternator Control Mode []
-	PID 0x1165 : N/A
-	PID 0x1166 : N/A
-	PID 0x1174 : N/A
-	PID 0x1175 : N/A
-	PID 0x11C2 : N/A
-	PID 0x11C4 : N/A
-	PID 0x11C5 : N/A
-	PID 0x11C6 : N/A
-	PID 0x11C8 : N/A
-	PID 0x11CA : N/A
-	PID 0x11CC : N/A
-	PID 0x11CE : N/A
-	PID 0x11D0 : N/A
-	PID 0x11D2 : N/A
-	PID 0x11D3 : N/A
-	PID 0x11D4 : N/A
-	PID 0x11D5 : N/A
-	PID 0x11D6 : N/A
-	PID 0x11D7 : N/A
-	PID 0x11D9 : N/A
-	PID 0x11DA : N/A
-	PID 0x11DC : N/A
-	PID 0x11DD : N/A
-	PID 0x11DE : N/A
-	PID 0x11E3 : N/A
-	PID 0x11E4 : N/A
-	PID 0x11F1 : N/A
-	PID 0x11F2 : N/A
-	PID 0x11F3 : N/A
-	PID 0x11F4 : N/A
-	PID 0x11F5 : N/A
-	PID 0x122E : N/A
+	PID 0x1140 : PIDs Supported [1141..1160] []
+	PID 0x1160 : PIDs Supported [1161..1180] []
+	PID 0x1165 : {?} [?]
+	PID 0x1166 : {?} [?]
+	PID 0x1174 : {?} [?]
+	PID 0x1175 : {?} [?]
+	PID 0x1180 : PIDs Supported [1181..11A0] []
+	PID 0x11A0 : PIDs Supported [11A1..11C0] []
+	PID 0x11C0 : PIDs Supported [11C1..11E0] []
+	PID 0x11C2 : {?} [?]
+	PID 0x11C4 : {?} [?]
+	PID 0x11C5 : {?} [?]
+	PID 0x11C6 : {?} [?]
+	PID 0x11C8 : {?} [?]
+	PID 0x11CA : {?} [?]
+	PID 0x11CC : {?} [?]
+	PID 0x11CE : {?} [?]
+	PID 0x11D0 : {?} [?]
+	PID 0x11D2 : {?} [?]
+	PID 0x11D3 : {?} [?]
+	PID 0x11D4 : {?} [?]
+	PID 0x11D5 : {?} [?]
+	PID 0x11D6 : {?} [?]
+	PID 0x11D7 : {?} [?]
+	PID 0x11D9 : {?} [?]
+	PID 0x11DA : {?} [?]
+	PID 0x11DC : {?} [?]
+	PID 0x11DD : {?} [?]
+	PID 0x11DE : {?} [?]
+	PID 0x11E0 : PIDs Supported [11E1..1200] []
+	PID 0x11E3 : {?} [?]
+	PID 0x11E4 : {?} [?]
+	PID 0x11F1 : {?} [?]
+	PID 0x11F2 : {?} [?]
+	PID 0x11F3 : {?} [?]
+	PID 0x11F4 : {?} [?]
+	PID 0x11F5 : {?} [?]
+	PID 0x1200 : PIDs Supported [1201..1220] []
+	PID 0x1220 : PIDs Supported [1221..1240] []
+	PID 0x122E : {?} [?]
 	PID 0x122F : Clutch Switch []
 	PID 0x1230 : Stop Light Switch []
 	PID 0x1231 : Cruise Control Set/Coast Switch []
 	PID 0x1232 : Cruise Control Resume/Accelerate Switch []
 	PID 0x1233 : Brake Switch []
 	PID 0x1234 : Cruise Control Main Toggle Switch []
+	PID 0x1240 : PIDs Supported [1241..1260] []
 	PID 0x124A : Cruise Control Cancel Switch []
 	PID 0x124C : Oil Level Switch []
-	PID 0x1265 : N/A
-	PID 0x1266 : N/A
-	PID 0x1274 : N/A
-	PID 0x1275 : N/A
-	PID 0x1276 : N/A
-	PID 0x1277 : N/A
-	PID 0x1278 : N/A
-	PID 0x1279 : N/A
-	PID 0x127A : N/A
-	PID 0x127B : N/A
-	PID 0x127C : N/A
-	PID 0x127E : N/A
-	PID 0x127F : N/A
-	PID 0x12A1 : N/A
-	PID 0x12A2 : N/A
-	Supported PIDs total: 107 | known: 20 | unknown: 87
+	PID 0x1260 : PIDs Supported [1261..1280] []
+	PID 0x1265 : {?} [?]
+	PID 0x1266 : {?} [?]
+	PID 0x1274 : {?} [?]
+	PID 0x1275 : {?} [?]
+	PID 0x1276 : {?} [?]
+	PID 0x1277 : {?} [?]
+	PID 0x1278 : {?} [?]
+	PID 0x1279 : {?} [?]
+	PID 0x127A : {?} [?]
+	PID 0x127B : {?} [?]
+	PID 0x127C : {?} [?]
+	PID 0x127E : {?} [?]
+	PID 0x127F : {?} [?]
+	PID 0x1280 : PIDs Supported [1281..12A0] []
+	PID 0x12A0 : PIDs Supported [12A1..12C0] []
+	PID 0x12A1 : {?} [?]
+	PID 0x12A2 : {?} [?]
+	Supported PIDs total: 129 | known: 42 | unknown: 87
 
 ### <a name="JF7C100D"></a> 6.3) Using "2015 Forester Diesel CVT Responses.txt"
 
@@ -546,7 +596,7 @@ The program uses pre-compiled paths if arguments are missing.
 	or for using predefined file paths: ParsePID.exe
 
 	Parsing parameter definitions from file "data/Subaru_mode22_def.csv"
-	Parsed 68 parameters.
+	Parsed 100 parameters.
 
 	Parsing support responses from file "data/2015 Forester Diesel CVT Responses.txt"
 	[SupportResponse: PID=0x1000 | SupportValue=0xFFC00007]
@@ -576,58 +626,68 @@ The program uses pre-compiled paths if arguments are missing.
 	Parsed 24 support responses.
 
 	Results:
-	PID 0x1001 : N/A
-	PID 0x1002 : N/A
-	PID 0x1003 : N/A
-	PID 0x1004 : N/A
-	PID 0x1005 : N/A
-	PID 0x1006 : N/A
-	PID 0x1007 : N/A
-	PID 0x1008 : N/A
-	PID 0x1009 : N/A
-	PID 0x100A : N/A
-	PID 0x101E : N/A
-	PID 0x101F : N/A
-	PID 0x1022 : N/A
+	PID 0x1000 : PIDs Supported [1001..1020] []
+	PID 0x1001 : {?} [?]
+	PID 0x1002 : {?} [?]
+	PID 0x1003 : {?} [?]
+	PID 0x1004 : {?} [?]
+	PID 0x1005 : {?} [?]
+	PID 0x1006 : {?} [?]
+	PID 0x1007 : {?} [?]
+	PID 0x1008 : {?} [?]
+	PID 0x1009 : {?} [?]
+	PID 0x100A : {?} [?]
+	PID 0x101E : {?} [?]
+	PID 0x101F : {?} [?]
+	PID 0x1020 : PIDs Supported [1021..1040] []
+	PID 0x1022 : {?} [?]
 	PID 0x102A : Injector Code Cylinder #1 []
 	PID 0x102B : Injector Code Cylinder #2 []
 	PID 0x102C : Injector Code Cylinder #3 []
 	PID 0x102D : Injector Code Cylinder #4 []
-	PID 0x1030 : N/A
-	PID 0x1031 : N/A
-	PID 0x1032 : N/A
-	PID 0x103C : N/A
-	PID 0x103D : N/A
-	PID 0x103E : N/A
-	PID 0x103F : N/A
-	PID 0x1061 : N/A
-	PID 0x1063 : N/A
-	PID 0x1088 : N/A
+	PID 0x1030 : {?} [?]
+	PID 0x1031 : {?} [?]
+	PID 0x1032 : {?} [?]
+	PID 0x103C : {?} [?]
+	PID 0x103D : {?} [?]
+	PID 0x103E : {?} [?]
+	PID 0x103F : {?} [?]
+	PID 0x1040 : PIDs Supported [1041..1060] []
+	PID 0x1060 : PIDs Supported [1061..1080] []
+	PID 0x1061 : {?} [?]
+	PID 0x1063 : {?} [?]
+	PID 0x1080 : PIDs Supported [1081..10A0] []
+	PID 0x1088 : {?} [?]
+	PID 0x10A0 : PIDs Supported [10A1..10C0] []
 	PID 0x10A1 : Mass Airflow Sensor Voltage [V]
 	PID 0x10A6 : Accelerator Pedal Angle [%]
 	PID 0x10A7 : Fuel Temperature [°C]
 	PID 0x10AC : Primary Boost Control [%]
 	PID 0x10B2 : Alternator Duty [%]
-	PID 0x10BA : N/A
-	PID 0x10BC : N/A
-	PID 0x10CA : N/A
-	PID 0x10DF : N/A
+	PID 0x10BA : {?} [?]
+	PID 0x10BC : {?} [?]
+	PID 0x10C0 : PIDs Supported [10C1..10E0] []
+	PID 0x10CA : {?} [?]
+	PID 0x10DF : {?} [?]
+	PID 0x10E0 : PIDs Supported [10E1..1100] []
 	PID 0x10E3 : Memorised Cruise Speed [km/h]
-	PID 0x1115 : N/A
+	PID 0x1100 : PIDs Supported [1101..1120] []
+	PID 0x1115 : {?} [?]
 	PID 0x1116 : Final Injection Amount [mm³/st]
-	PID 0x1117 : N/A
-	PID 0x1118 : N/A
-	PID 0x1119 : N/A
-	PID 0x111A : N/A
+	PID 0x1117 : {?} [?]
+	PID 0x1118 : {?} [?]
+	PID 0x1119 : {?} [?]
+	PID 0x111A : {?} [?]
 	PID 0x111B : Exhaust Gas Recirculation (EGR) Target Valve Opening Angle [deg]
 	PID 0x111C : Exhaust Gas Recirculation (EGR) Valve Opening Angle [deg]
-	PID 0x111D : N/A
-	PID 0x111E : N/A
+	PID 0x111D : {?} [?]
+	PID 0x111E : {?} [?]
+	PID 0x1120 : PIDs Supported [1121..1140] []
 	PID 0x1121 : Target Engine Speed [rpm]
-	PID 0x1122 : N/A
-	PID 0x1123 : N/A
-	PID 0x1124 : N/A
-	PID 0x1129 : N/A
+	PID 0x1122 : {?} [?]
+	PID 0x1123 : {?} [?]
+	PID 0x1124 : {?} [?]
+	PID 0x1129 : {?} [?]
 	PID 0x112A : Mileage after Injector Learning [km]
 	PID 0x112B : Mileage after Injector Replacement [km]
 	PID 0x112C : Interior Heater [steps]
@@ -635,16 +695,17 @@ The program uses pre-compiled paths if arguments are missing.
 	PID 0x112E : Quantity Correction Cylinder #2 [ms]
 	PID 0x112F : Quantity Correction Cylinder #3 [ms]
 	PID 0x1130 : Quantity Correction Cylinder #4 [ms]
-	PID 0x1134 : N/A
+	PID 0x1134 : {?} [?]
 	PID 0x1137 : Alternator Control Mode []
-	PID 0x113F : N/A
+	PID 0x113F : {?} [?]
+	PID 0x1140 : PIDs Supported [1141..1160] []
 	PID 0x1149 : Cumulative Ash Ratio [%]
 	PID 0x114B : Estimated Catalyst Temperature [°C]
 	PID 0x114C : Estimated DPF Temperature [°C]
 	PID 0x114D : Soot Accumulation Ratio [%]
 	PID 0x114E : Oil Dilution Ratio [%]
-	PID 0x1153 : N/A
-	PID 0x1154 : N/A
+	PID 0x1153 : {?} [?]
+	PID 0x1154 : {?} [?]
 	PID 0x1155 : Estimated Distance to Oil Change [km]
 	PID 0x1156 : Running Distance since last DPF Regeneration [km]
 	PID 0x1157 : DPF Regeneration Count [Times]
@@ -652,127 +713,141 @@ The program uses pre-compiled paths if arguments are missing.
 	PID 0x1159 : Micro-Quantity-Injection Final Learning Values Cylinder #2 [ms]
 	PID 0x115A : Micro-Quantity-Injection Final Learning Values Cylinder #3 [ms]
 	PID 0x115B : Micro-Quantity-Injection Final Learning Values Cylinder #4 [ms]
-	PID 0x115D : N/A
+	PID 0x115D : {?} [?]
+	PID 0x1160 : PIDs Supported [1161..1180] []
 	PID 0x1161 : Individual Pump Difference Learning Value [mA]
 	PID 0x1162 : Final Main Injection Period [ms]
-	PID 0x1163 : N/A
-	PID 0x1164 : N/A
-	PID 0x1165 : N/A
-	PID 0x1166 : N/A
-	PID 0x1167 : N/A
-	PID 0x1168 : N/A
-	PID 0x1169 : N/A
+	PID 0x1163 : {?} [?]
+	PID 0x1164 : {?} [?]
+	PID 0x1165 : {?} [?]
+	PID 0x1166 : {?} [?]
+	PID 0x1167 : {?} [?]
+	PID 0x1168 : {?} [?]
+	PID 0x1169 : {?} [?]
 	PID 0x116A : Distance since DPF Warning Light Flashing [km]
-	PID 0x116B : N/A
-	PID 0x116C : N/A
-	PID 0x116D : N/A
-	PID 0x116E : N/A
-	PID 0x116F : N/A
-	PID 0x1170 : N/A
-	PID 0x1171 : N/A
-	PID 0x1172 : N/A
-	PID 0x1173 : N/A
-	PID 0x1174 : N/A
-	PID 0x1175 : N/A
-	PID 0x1177 : N/A
-	PID 0x1178 : N/A
-	PID 0x1179 : N/A
-	PID 0x117A : N/A
-	PID 0x117B : N/A
-	PID 0x117C : N/A
-	PID 0x117D : N/A
-	PID 0x117E : N/A
-	PID 0x117F : N/A
-	PID 0x1181 : N/A
-	PID 0x1182 : N/A
-	PID 0x1183 : N/A
-	PID 0x1184 : N/A
-	PID 0x1185 : N/A
-	PID 0x1186 : N/A
-	PID 0x1187 : N/A
-	PID 0x1188 : N/A
+	PID 0x116B : {?} [?]
+	PID 0x116C : {?} [?]
+	PID 0x116D : {?} [?]
+	PID 0x116E : {?} [?]
+	PID 0x116F : {?} [?]
+	PID 0x1170 : {?} [?]
+	PID 0x1171 : {?} [?]
+	PID 0x1172 : {?} [?]
+	PID 0x1173 : {?} [?]
+	PID 0x1174 : {?} [?]
+	PID 0x1175 : {?} [?]
+	PID 0x1177 : {?} [?]
+	PID 0x1178 : {?} [?]
+	PID 0x1179 : {?} [?]
+	PID 0x117A : {?} [?]
+	PID 0x117B : {?} [?]
+	PID 0x117C : {?} [?]
+	PID 0x117D : {?} [?]
+	PID 0x117E : {?} [?]
+	PID 0x117F : {?} [?]
+	PID 0x1180 : PIDs Supported [1181..11A0] []
+	PID 0x1181 : {?} [?]
+	PID 0x1182 : {?} [?]
+	PID 0x1183 : {?} [?]
+	PID 0x1184 : {?} [?]
+	PID 0x1185 : {?} [?]
+	PID 0x1186 : {?} [?]
+	PID 0x1187 : {?} [?]
+	PID 0x1188 : {?} [?]
 	PID 0x1189 : Oil Dilution Amount [kg]
-	PID 0x118A : N/A
-	PID 0x118B : N/A
-	PID 0x118C : N/A
-	PID 0x118D : N/A
-	PID 0x118E : N/A
-	PID 0x118F : N/A
-	PID 0x1190 : N/A
+	PID 0x118A : {?} [?]
+	PID 0x118B : {?} [?]
+	PID 0x118C : {?} [?]
+	PID 0x118D : {?} [?]
+	PID 0x118E : {?} [?]
+	PID 0x118F : {?} [?]
+	PID 0x1190 : {?} [?]
+	PID 0x11A0 : PIDs Supported [11A1..11C0] []
 	PID 0x11A1 : DPF Regeneration Attempts [Times]
-	PID 0x11A2 : N/A
-	PID 0x11A3 : N/A
-	PID 0x11A4 : N/A
-	PID 0x11A5 : N/A
-	PID 0x11A6 : N/A
-	PID 0x11A7 : N/A
-	PID 0x11B0 : N/A
-	PID 0x11B1 : N/A
-	PID 0x11B2 : N/A
-	PID 0x11B3 : N/A
-	PID 0x11B4 : N/A
-	PID 0x11B5 : N/A
-	PID 0x11B6 : N/A
-	PID 0x11B7 : N/A
-	PID 0x11B8 : N/A
-	PID 0x11B9 : N/A
-	PID 0x11BA : N/A
-	PID 0x11BB : N/A
-	PID 0x11C4 : N/A
-	PID 0x11C5 : N/A
-	PID 0x11C6 : N/A
-	PID 0x11C8 : N/A
-	PID 0x11CA : N/A
-	PID 0x11CC : N/A
-	PID 0x11D2 : N/A
-	PID 0x11D3 : N/A
-	PID 0x11D4 : N/A
-	PID 0x11D5 : N/A
-	PID 0x11D6 : N/A
-	PID 0x11D7 : N/A
-	PID 0x11D9 : N/A
-	PID 0x11DA : N/A
-	PID 0x11DC : N/A
-	PID 0x11DD : N/A
-	PID 0x11F3 : N/A
-	PID 0x11F4 : N/A
+	PID 0x11A2 : {?} [?]
+	PID 0x11A3 : {?} [?]
+	PID 0x11A4 : {?} [?]
+	PID 0x11A5 : {?} [?]
+	PID 0x11A6 : {?} [?]
+	PID 0x11A7 : {?} [?]
+	PID 0x11B0 : {?} [?]
+	PID 0x11B1 : {?} [?]
+	PID 0x11B2 : {?} [?]
+	PID 0x11B3 : {?} [?]
+	PID 0x11B4 : {?} [?]
+	PID 0x11B5 : {?} [?]
+	PID 0x11B6 : {?} [?]
+	PID 0x11B7 : {?} [?]
+	PID 0x11B8 : {?} [?]
+	PID 0x11B9 : {?} [?]
+	PID 0x11BA : {?} [?]
+	PID 0x11BB : {?} [?]
+	PID 0x11C0 : PIDs Supported [11C1..11E0] []
+	PID 0x11C4 : {?} [?]
+	PID 0x11C5 : {?} [?]
+	PID 0x11C6 : {?} [?]
+	PID 0x11C8 : {?} [?]
+	PID 0x11CA : {?} [?]
+	PID 0x11CC : {?} [?]
+	PID 0x11D2 : {?} [?]
+	PID 0x11D3 : {?} [?]
+	PID 0x11D4 : {?} [?]
+	PID 0x11D5 : {?} [?]
+	PID 0x11D6 : {?} [?]
+	PID 0x11D7 : {?} [?]
+	PID 0x11D9 : {?} [?]
+	PID 0x11DA : {?} [?]
+	PID 0x11DC : {?} [?]
+	PID 0x11DD : {?} [?]
+	PID 0x11E0 : PIDs Supported [11E1..1200] []
+	PID 0x11F3 : {?} [?]
+	PID 0x11F4 : {?} [?]
+	PID 0x1200 : PIDs Supported [1201..1220] []
+	PID 0x1220 : PIDs Supported [1221..1240] []
 	PID 0x1230 : Stop Light Switch []
 	PID 0x1231 : Cruise Control Set/Coast Switch []
 	PID 0x1232 : Cruise Control Resume/Accelerate Switch []
 	PID 0x1233 : Brake Switch []
 	PID 0x1234 : Cruise Control Main Toggle Switch []
-	PID 0x1244 : N/A
-	PID 0x1245 : N/A
+	PID 0x1240 : PIDs Supported [1241..1260] []
+	PID 0x1244 : {?} [?]
+	PID 0x1245 : {?} [?]
 	PID 0x124A : Cruise Control Cancel Switch []
 	PID 0x124C : Oil Level Switch []
-	PID 0x124D : N/A
-	PID 0x124E : N/A
+	PID 0x124D : {?} [?]
+	PID 0x124E : {?} [?]
 	PID 0x1251 : Sub Fuel Pump Relay Switch []
-	PID 0x1253 : N/A
+	PID 0x1253 : {?} [?]
 	PID 0x1254 : Injector Learning Switch []
-	PID 0x1258 : N/A
-	PID 0x1259 : N/A
+	PID 0x1258 : {?} [?]
+	PID 0x1259 : {?} [?]
 	PID 0x125B : DPF Active Regeneration Switch []
-	PID 0x125C : N/A
-	PID 0x125D : N/A
-	PID 0x125E : N/A
-	PID 0x125F : N/A
-	PID 0x1262 : N/A
-	PID 0x1268 : N/A
-	PID 0x127C : N/A
-	PID 0x127E : N/A
-	PID 0x1287 : N/A
-	PID 0x1288 : N/A
-	PID 0x1293 : N/A
-	PID 0x1298 : N/A
-	PID 0x1299 : N/A
-	PID 0x129A : N/A
-	PID 0x12D4 : N/A
-	PID 0x12D5 : N/A
-	PID 0x12DA : N/A
-	PID 0x12DB : N/A
-	PID 0x12E9 : N/A
-	PID 0x12EA : N/A
-	Supported PIDs total: 197 | known: 49 | unknown: 148
+	PID 0x125C : {?} [?]
+	PID 0x125D : {?} [?]
+	PID 0x125E : {?} [?]
+	PID 0x125F : {?} [?]
+	PID 0x1260 : PIDs Supported [1261..1280] []
+	PID 0x1262 : {?} [?]
+	PID 0x1268 : {?} [?]
+	PID 0x127C : {?} [?]
+	PID 0x127E : {?} [?]
+	PID 0x1280 : PIDs Supported [1281..12A0] []
+	PID 0x1287 : {?} [?]
+	PID 0x1288 : {?} [?]
+	PID 0x1293 : {?} [?]
+	PID 0x1298 : {?} [?]
+	PID 0x1299 : {?} [?]
+	PID 0x129A : {?} [?]
+	PID 0x12A0 : PIDs Supported [12A1..12C0] []
+	PID 0x12C0 : PIDs Supported [12C1..12E0] []
+	PID 0x12D4 : {?} [?]
+	PID 0x12D5 : {?} [?]
+	PID 0x12DA : {?} [?]
+	PID 0x12DB : {?} [?]
+	PID 0x12E0 : PIDs Supported [12E1..1300] []
+	PID 0x12E9 : {?} [?]
+	PID 0x12EA : {?} [?]
+	PID 0x1300 : {?} [?]
+	Supported PIDs total: 222 | known: 73 | unknown: 149
 
 ---

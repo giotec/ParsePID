@@ -37,7 +37,10 @@ namespace ParsePID
 		Formula,
 		Formula_Bytes,
 		Units,
+		DisplayMin,
+		DisplayMax,
 		Enumerations,
-		Description
+		Description,
+		SSM2_Reference
 	}
 }

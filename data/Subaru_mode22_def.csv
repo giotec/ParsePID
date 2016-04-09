@@ -1,12 +1,26 @@
 PID	EngineTypes	Authentication	Name_Short	Name_Full	Length	Type	DataType_Raw	Formula	Formula_Bytes	Units	DisplayMin	DisplayMax	Enumerations	Description	SSM2_Reference
+0x0000			PIDs Supported [0001..0020]	PIDs Supported [0001..0020]	4	raw									
 0x0005	[D][P]		Coolant Temp	Coolant Temperature	1	float	uint8	x-40	A-40	°C	-20	140		=OBD Mode 1 PID 0x05	
+0x0020			PIDs Supported [0021..0040]	PIDs Supported [0021..0040]	4	raw									
 0x0023			Fuel Rail Pressure	Fuel Rail Pressure (diesel, or gasoline direct inject)	2	float	uint16	x/10	((A*256)+B)/10	bar	0	2500		=OBD Mode 1 PID 0x23	0x0001EC [MPa]
 0x003C			EGT Catalyst Inlet	Exhaust Gas Temperature (EGT) at Catalyst Inlet	2	float	uint16	x/10-40	((A*256)+B)/10-40	°C	0	1000		=OBD Mode 1 PID 0x3C	
 0x003E			EGT DPF Inlet	Exhaust Gas Temperature (EGT) at DPF Inlet	2	float	uint16	x/10-40	((A*256)+B)/10-40	°C	0	1000		=OBD Mode 1 PID 0x3E	
+0x0040			PIDs Supported [0041..0060]	PIDs Supported [0041..0060]	4	raw									
+0x0060			PIDs Supported [0061..0080]	PIDs Supported [0061..0080]	4	raw									
+0x0080			PIDs Supported [0081..00A0]	PIDs Supported [0081..00A0]	4	raw									
+0x00A0			PIDs Supported [00A1..00C0]	PIDs Supported [00A1..00C0]	4	raw									
+0x00C0			PIDs Supported [00C1..00E0]	PIDs Supported [00C1..00E0]	4	raw									
+0x00E0			PIDs Supported [00E1..0100]	PIDs Supported [00E1..0100]	4	raw									
+0x1000			PIDs Supported [1001..1020]	PIDs Supported [1001..1020]	4	raw									
+0x1020			PIDs Supported [1021..1040]	PIDs Supported [1021..1040]	4	raw									
 0x102A	[D]	[A]	Injector Code Cyl #1	Injector Code Cylinder #1	15	raw									
 0x102B	[D]	[A]	Injector Code Cyl #2	Injector Code Cylinder #2	15	raw									
 0x102C	[D]	[A]	Injector Code Cyl #3	Injector Code Cylinder #3	15	raw									
 0x102D	[D]	[A]	Injector Code Cyl #4	Injector Code Cylinder #4	15	raw									
+0x1040			PIDs Supported [1041..1060]	PIDs Supported [1041..1060]	4	raw									
+0x1060			PIDs Supported [1061..1080]	PIDs Supported [1061..1080]	4	raw									
+0x1080			PIDs Supported [1081..10A0]	PIDs Supported [1081..10A0]	4	raw									
+0x10A0			PIDs Supported [10A1..10C0]	PIDs Supported [10A1..10C0]	4	raw									
 0x10A1	[D][P]		MAF Voltage	Mass Airflow Sensor Voltage	1	float	uint8	x/50	A/50	V	0	5.1			0x00001D
 0x10A3	[P]		Fuel Injector #1	Fuel Injector #1 Pulse Width	1	float	uint8	x*0.256	A*0.256	ms				includes injector latency	0x000020
 0x10A4	[P]		Fuel Injector #2	Fuel Injector #2 Pulse Width	1	float	uint8	x*0.256	A*0.256	ms				includes injector latency	0x000021
@@ -17,11 +31,15 @@ PID	EngineTypes	Authentication	Name_Short	Name_Full	Length	Type	DataType_Raw	For
 0x10B2	[D][P]		Alternator Duty	Alternator Duty	1	float	uint8	x	A	%	0	100			0x00003A
 0x10B4	[P]		Intake VVT Advance Angle R	Intake VVT Advance Angle Right	1	float	uint8	x-50	A-50	deg					
 0x10B5	[P]		Intake VVT Advance Angle L	Intake VVT Advance Angle Left	1	float	uint8	x-50	A-50	deg					
+0x10C0			PIDs Supported [10C1..10E0]	PIDs Supported [10C1..10E0]	4	raw									
+0x10E0			PIDs Supported [10E1..1100]	PIDs Supported [10E1..1100]	4	raw									
 0x10E3	[D][P]		Memorised Cruise Speed	Memorised Cruise Speed	1	float	uint8	x	A	km/h	0	255			0x00010A
+0x1100			PIDs Supported [1101..1120]	PIDs Supported [1101..1120]	4	raw									
 0x1116	[D]		Final Injection Amount	Final Injection Amount	2	float	uint16	x/256	A+B/256	mm³/st	0	100			
 0x111B	[D]		EGR Target Valve Opening Angle	Exhaust Gas Recirculation (EGR) Target Valve Opening Angle	1	float	uint8	x-50	A-50	deg	0	90			
 0x111C	[D]		EGR Valve Opening Angle	Exhaust Gas Recirculation (EGR) Valve Opening Angle	1	float	uint8	x-50	A-50	deg	0	90			
 0x111F	[D]		Inlet Air Temp	Inlet Air Temperature (after air filter)	1	float	uint8	x-40	A-40	°C	-20	60			
+0x1120			PIDs Supported [1121..1140]	PIDs Supported [1121..1140]	4	raw									
 0x1121	[D][P]		Target Engine Speed	Target Engine Speed	2	float	uint16	x/4	((A*256)+B)/4	rpm	0	10000			
 0x112A	[D]		Mileage after Injector Learning	Mileage after Injector Learning	2	float	uint16	x*5	((A*256)+B)*5	km	0	5000			
 0x112B	[D]		Mileage after Injector Replacement	Mileage after Injector Replacement	2	float	uint16	x*5	((A*256)+B)*5	km	0	300000			
@@ -33,6 +51,7 @@ PID	EngineTypes	Authentication	Name_Short	Name_Full	Length	Type	DataType_Raw	For
 0x1135	[D][P]		Battery Current	Battery Current	1	float	uint8	x-128	A-128	A	-100	100			
 0x1136	[D][P]		Battery Temperature	Battery Temperature	1	float	uint8	x-40	A-40	°C	-20	60			
 0x1137	[D][P]		Alternator Control Mode	Alternator Control Mode	1	enum	uint8				0	5	0=High; 1=ExHigh; 2=Low; 3=Mid		0x000272
+0x1140			PIDs Supported [1141..1160]	PIDs Supported [1141..1160]	4	raw									
 0x1149	[D]		Cumulative Ash Ratio	Cumulative Ash Ratio	1	float	uint8	x	A	%	0	100			
 0x114A	[D]		DPF Pressure Diff	Pressure Difference between DPF Inlet and Outlet	1	float	uint8	x	A	kPa	0	50			
 0x114B	[D]		Estimated Catalyst Temp	Estimated Catalyst Temperature	1	float	uint8	x*5-40	A*5-40	°C	0	1000			
@@ -46,23 +65,36 @@ PID	EngineTypes	Authentication	Name_Short	Name_Full	Length	Type	DataType_Raw	For
 0x1159	[D]		Micro-Q Learning Values Cyl #2	Micro-Quantity-Injection Final Learning Values Cylinder #2	8	float	uint8[]	(x[i]-128)/200		ms	-0.64	0.635		byte[0..4] = Pressure Level 1..5	
 0x115A	[D]		Micro-Q Learning Values Cyl #3	Micro-Quantity-Injection Final Learning Values Cylinder #3	8	float	uint8[]	(x[i]-128)/200		ms	-0.64	0.635		byte[0..4] = Pressure Level 1..5	
 0x115B	[D]		Micro-Q Learning Values Cyl #4	Micro-Quantity-Injection Final Learning Values Cylinder #4	8	float	uint8[]	(x[i]-128)/200		ms	-0.64	0.635		byte[0..4] = Pressure Level 1..5	
+0x1160			PIDs Supported [1161..1180]	PIDs Supported [1161..1180]	4	raw									
 0x1161	[D]		SCV Learning Value	Individual Pump Difference Learning Value	2	float	uint16	x-1000	((A*256)+B)-1000	mA	-1000	1000		Suction Control Valve	0x000238
 0x1162	[D]		Final Main Injection Period	Final Main Injection Period	2	float	uint16	x/1000	((A*256)+B)/1000	ms	0	2			0x000257
 0x116A	[D]	[A]	Distance since DPF Warning	Distance since DPF Warning Light Flashing	2	float	uint16	x	A*256+B	km	0	5000			N/A
+0x1180			PIDs Supported [1181..11A0]	PIDs Supported [1181..11A0]	4	raw									
 0x1189	[D]	[A]	Oil Dilution Amount	Oil Dilution Amount	1	float	uint8	x/200	A/200	kg	0	1			
+0x11A0			PIDs Supported [11A1..11C0]	PIDs Supported [11A1..11C0]	4	raw									
 0x11A1	[D]		DPF Regeneration Attempts	DPF Regeneration Attempts	2	float	uint16	x	A*256+B	Times	0	1000		Euro 6 only	N/A
+0x11C0			PIDs Supported [11C1..11E0]	PIDs Supported [11C1..11E0]	4	raw									
+0x11E0			PIDs Supported [11E1..1200]	PIDs Supported [11E1..1200]	4	raw									
+0x1200			PIDs Supported [1201..1220]	PIDs Supported [1201..1220]	4	raw									
+0x1220			PIDs Supported [1221..1240]	PIDs Supported [1221..1240]	4	raw									
 0x122F	[D][P]		Clutch SW	Clutch Switch	1	enum	uint8				0	255	0x00=OFF; 0xFF=ON		0x000121 bit 7
 0x1230	[D][P]		Stop Light SW	Stop Light Switch	1	enum	uint8				0	255	0x00=OFF; 0xFF=ON		0x000121 bit 6
 0x1231	[D][P]		CC Set/Coast SW	Cruise Control Set/Coast Switch	1	enum	uint8				0	255	0x00=OFF; 0xFF=ON		0x000121 bit 5
 0x1232	[D][P]		CC Resume/Accelerate SW	Cruise Control Resume/Accelerate Switch	1	enum	uint8				0	255	0x00=OFF; 0xFF=ON		0x000121 bit 4
 0x1233	[D][P]		Brake SW	Brake Switch	1	enum	uint8				0	255	0x00=OFF; 0xFF=ON		0x000121 bit 3
 0x1234	[D][P]		CC Main Toggle SW	Cruise Control Main Toggle Switch	1	enum	uint8				0	255	0x00=OFF; 0xFF=ON		0x000121 bit 1
+0x1240			PIDs Supported [1241..1260]	PIDs Supported [1241..1260]	4	raw									
 0x124A	[D][P]		CC Cancel SW	Cruise Control Cancel Switch	1	enum	uint8				0	255	0x00=OFF; 0xFF=ON		0x0000D7 bit 0
 0x124C	[D][P]		Oil Level SW	Oil Level Switch	1	enum	uint8				0	255	0x00=LOW; 0xFF=HIGH (normal)		0x000196 bit 5
 0x124F	[D]		Glow SW	Glow Relay Switch	1	enum	uint8				0	255	0x00=OFF; 0xFF=ON	glow plugs	0x000197 bit 5
 0x1251	[D]		Sub Fuel Pump SW	Sub Fuel Pump Relay Switch	1	enum	uint8				0	255	0x00=OFF; 0xFF=ON	electrical pump (near fuel tank)	0x000197 bit 3
 0x1254	[D]		Injector Learning SW	Injector Learning Switch	1	enum	uint8				0	255	0x00=Not Completed; 0xFF=Completed		0x000197 bit 0
 0x125B	[D]		DPF Active Regeneration SW	DPF Active Regeneration Switch	1	enum	uint8				0	255	0x00=OFF; 0xFF=ON		
+0x1260			PIDs Supported [1261..1280]	PIDs Supported [1261..1280]	4	raw									
+0x1280			PIDs Supported [1281..12A0]	PIDs Supported [1281..12A0]	4	raw									
+0x12A0			PIDs Supported [12A1..12C0]	PIDs Supported [12A1..12C0]	4	raw									
+0x12C0			PIDs Supported [12C1..12E0]	PIDs Supported [12C1..12E0]	4	raw									
+0x12E0			PIDs Supported [12E1..1300]	PIDs Supported [12E1..1300]	4	raw									
 0xF100	[D][P]		SSMID	SSMID	3	raw									
 0xF182	[D][P]		ROMID	ROMID	5	raw									
 0xF190	[D][P]		VIN	Vehicle Identification Number (VIN)	17	ascii									
